@@ -9,7 +9,7 @@ from typing import Optional
 
 # The only values we accept for these fields.
 # If something outside this list gets passed in, the system throws an error.
-VALID_SOURCES = {"wasserman", "deloitte", "bcg", "nielsen", "mckinsey"}
+VALID_SOURCES = {"wasserman", "deloitte", "bcg", "nielsen", "mckinsey", "reddit"}
 VALID_SPORTS = {"WNBA", "NWSL", "WTA", "volleyball", "general"}
 VALID_SEASON_PHASES = {"preseason", "midseason", "playoff", "finals", "offseason", "unknown"}
 
