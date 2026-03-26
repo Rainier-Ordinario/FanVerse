@@ -1,19 +1,19 @@
-"""
-FanVerse Mock Data — Seed File
--------------------------------
-Realistic research report excerpts across all 5 sources.
-Run this file directly to seed the repository: python seed_mock_data.py
-Replace with real scraped data once the pipeline is ready — schema is identical.
-"""
+# seed_mock_data.py
+# Populates the repository with realistic fake data for development and demos.
+# Run this file directly: python seed_mock_data.py
+#
+# When real scrapers are ready, they call ingest() with their own data.
+# This file stays as-is — both sources live in the same repository.
 
 import sys
 import os
 sys.path.insert(0, os.path.dirname(__file__))
 
-from ingest import ingest
+from ingest import ingest, repo_stats
 
 MOCK_ENTRIES = [
-    # ── WASSERMAN ─────────────────────────────────────────────────────────────
+
+    # WASSERMAN
     {
         "text": "Female sports fans are not a monolith. Our research identifies six distinct segments ranging from identity-driven superfans to casual cultural observers, each requiring a different engagement strategy.",
         "source": "wasserman",
@@ -42,7 +42,7 @@ MOCK_ENTRIES = [
         "season_phase": "unknown",
     },
 
-    # ── DELOITTE ──────────────────────────────────────────────────────────────
+    # DELOITTE
     {
         "text": "Women's sports viewership grew 23% year-over-year in 2023, driven largely by increased media rights investment and the visibility boost from multi-sport athletes who cross over between leagues.",
         "source": "deloitte",
@@ -71,7 +71,7 @@ MOCK_ENTRIES = [
         "season_phase": "unknown",
     },
 
-    # ── BCG ───────────────────────────────────────────────────────────────────
+    # BCG
     {
         "text": "The female sports fan base represents a $1.3 trillion opportunity that most brands are systematically underinvesting in, treating women's sports as a CSR play rather than a commercial growth driver.",
         "source": "bcg",
@@ -100,7 +100,7 @@ MOCK_ENTRIES = [
         "season_phase": "unknown",
     },
 
-    # ── NIELSEN ───────────────────────────────────────────────────────────────
+    # NIELSEN
     {
         "text": "84% of female sports fans say they feel underrepresented by sports media coverage, with only 15% of sports media airtime dedicated to women's leagues despite growing viewership numbers.",
         "source": "nielsen",
@@ -130,7 +130,7 @@ MOCK_ENTRIES = [
         "season_phase": "unknown",
     },
 
-    # ── MCKINSEY ──────────────────────────────────────────────────────────────
+    # MCKINSEY
     {
         "text": "Organizations that invest in community-building infrastructure for female fans — dedicated forums, fan councils, player access programs — see a 31% improvement in season ticket renewal rates over a 3-year period.",
         "source": "mckinsey",
@@ -161,12 +161,9 @@ MOCK_ENTRIES = [
     },
 ]
 
-
 if __name__ == "__main__":
     print("Seeding FanVerse repository with mock data...\n")
     result = ingest(MOCK_ENTRIES)
     print(f"\nDone. {result['added']} records added, {result['skipped_duplicates']} skipped.")
     print("\nRepository stats:")
-
-    from ingest import repo_stats
     repo_stats()

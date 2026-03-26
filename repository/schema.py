@@ -1,29 +1,25 @@
-"""
-FanVerse Research Repository — Schema & Record Builder
--------------------------------------------------------
-Schema decisions (communicate to team):
-  - record_id: SHA-256 hash of (source + text). Deterministic = safe dedup on re-runs.
-  - sports: array, not string. One excerpt can reference multiple leagues.
-  - url + report_title: required for research reports (provenance).
-  - ingested_at: ISO timestamp of when the record entered the repo.
-  - week/season_phase: kept from original spec, optional (not all reports are season-specific).
-"""
+# schema.py
+# Defines what a single record looks like in the repository.
+# Every piece of data we collect gets passed through here before it gets saved.
 
 import hashlib
 import uuid
-from datetime import datetime, date
+from datetime import datetime, date as today_date
 from typing import Optional
 
+# The only values we accept for these fields.
+# If something outside this list gets passed in, the system throws an error.
 VALID_SOURCES = {"wasserman", "deloitte", "bcg", "nielsen", "mckinsey"}
 VALID_SPORTS = {"WNBA", "NWSL", "WTA", "volleyball", "general"}
 VALID_SEASON_PHASES = {"preseason", "midseason", "playoff", "finals", "offseason", "unknown"}
 
 
 def make_record_id(source: str, text: str) -> str:
-    """Deterministic ID — same source+text always produces the same hash. Powers deduplication."""
+    # Creates a unique fingerprint for a record based on its source and text.
+    # The same source + text will always produce the same fingerprint.
+    # This is how we detect duplicates. If the fingerprint already exists, we skip it.
     raw = f"{source.lower()}::{text.strip().lower()}"
     return hashlib.sha256(raw.encode()).hexdigest()[:24]
-
 
 def build_record(
     text: str,
@@ -31,26 +27,16 @@ def build_record(
     report_title: str,
     url: str,
     sports: list[str],
-    date: Optional[str] = None,
     record_date: Optional[str] = None,
+    date: Optional[str] = None,
     week: Optional[int] = None,
     season_phase: Optional[str] = "unknown",
     extra: Optional[dict] = None,
 ) -> dict:
-    """
-    Build a single repository record. Call this for every excerpt, caption, or data point.
+    # Takes raw data and packages it into a clean, validated record.
+    # Called once per data point — one call produces one record.
 
-    Args:
-        text:           Raw excerpt text from the report.
-        source:         One of: wasserman, deloitte, bcg, nielsen, mckinsey.
-        report_title:   Full title of the source report.
-        url:            URL or file path where the report was found.
-        sports:         List of sports this excerpt relates to. Use ["general"] if non-specific.
-        record_date:    Date string YYYY-MM-DD. Defaults to today if not provided.
-        week:           Week number if season-specific, else None.
-        season_phase:   One of: preseason, midseason, playoff, finals, offseason, unknown.
-        extra:          Any additional fields you want to attach (flexible).
-    """
+    # Make sure source and sports are valid before saving anything
     source = source.lower().strip()
     assert source in VALID_SOURCES, f"Unknown source: {source}. Must be one of {VALID_SOURCES}"
 
@@ -59,16 +45,16 @@ def build_record(
         assert s in VALID_SPORTS, f"Unknown sport: {s}. Must be one of {VALID_SPORTS}"
 
     return {
-        "record_id": make_record_id(source, text),
-        "post_id": str(uuid.uuid4()),           # unique per ingestion run (for downstream reference)
+        "record_id": make_record_id(source, text),  # fingerprint used for deduplication
+        "post_id": str(uuid.uuid4()),                # unique ID for this specific record
         "text": text.strip(),
         "source": source,
         "report_title": report_title,
         "url": url,
-        "sports": sports,
-        "date": record_date or date or __import__('datetime').date.today().isoformat(),
+        "sports": sports,                            # always an array — can cover multiple leagues
+        "date": record_date or date or today_date.today().isoformat(),  # falls back to today if not provided
         "week": week,
         "season_phase": season_phase or "unknown",
-        "ingested_at": datetime.utcnow().isoformat() + "Z",
-        **(extra or {}),
+        "ingested_at": datetime.utcnow().isoformat() + "Z",  # when this record was added to the system
+        **(extra or {}),                             # any extra fields get added here
     }
