@@ -1,4 +1,0 @@
-vaderSentiment
-transformers
-requests
-python-dotenv
