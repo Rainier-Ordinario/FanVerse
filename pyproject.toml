@@ -9,4 +9,8 @@ dependencies = [
     "requests",
     "python-dotenv",
     "torch",
+    "jupyter>=1.1.1",
+    "pandas>=2.3.3",
+    "scikit-learn>=1.7.2",
+    "matplotlib>=3.10.8",
 ]
