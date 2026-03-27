@@ -3,16 +3,15 @@
 # The main thing it does: never save the same record twice.
 
 import json
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from schema import build_record
 
-REPO_PATH = Path("repository.jsonl")    # the main data file — one record per line
-LOG_PATH = Path("ingestion_log.jsonl")  # keeps a log of every time the ingestion ran
+REPO_PATH = Path("repository.jsonl")    # one record per line
+LOG_PATH = Path("ingestion_log.jsonl")  # one entry per run
 
 def load_existing_ids() -> set[str]:
-    # Reads the repository and returns all the record fingerprints already saved.
-    # Used to check for duplicates before writing anything new.
+    # Returns all record fingerprints already in the repo — used for deduplication.
     if not REPO_PATH.exists():
         return set()
 
@@ -24,12 +23,11 @@ def load_existing_ids() -> set[str]:
                 try:
                     ids.add(json.loads(line)["record_id"])
                 except (json.JSONDecodeError, KeyError):
-                    pass  # skip any corrupted lines
+                    pass
     return ids
 
 def load_all() -> list[dict]:
-    # Loads every record from the repository into memory.
-    # Used by the query and stats functions below.
+    # Loads every record into memory. Used by query() and repo_stats().
     if not REPO_PATH.exists():
         return []
 
@@ -45,8 +43,8 @@ def load_all() -> list[dict]:
     return records
 
 def append_records(records: list[dict]) -> dict:
-    # Saves new records to the repository, skipping any that already exist.
-    # Safe to run on a schedule. It only ever adds new lines, never overwrites.
+    # Appends new records to the repo file, skipping duplicates.
+    # Append-only — never overwrites existing data.
     existing_ids = load_existing_ids()
     added = 0
     skipped = 0
@@ -64,7 +62,7 @@ def append_records(records: list[dict]) -> dict:
 
     # Save a summary of this run to the log
     summary = {
-        "run_at": datetime.utcnow().isoformat() + "Z",
+        "run_at": datetime.now(timezone.utc).isoformat(),
         "added": added,
         "skipped_duplicates": skipped,
         "total_in_repo": total,
