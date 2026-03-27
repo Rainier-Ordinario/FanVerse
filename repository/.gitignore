@@ -10,3 +10,4 @@ venv/
 # Repository data (optional - see note below)
 repository.jsonl
 ingestion_log.jsonl
+repository.json

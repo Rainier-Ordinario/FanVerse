@@ -46,21 +46,33 @@ MIN_TEXT_LENGTH = 150  # ignore posts/comments shorter than this
 # Women's sports subreddits: the community itself signals female fandom.
 # We collect all substantial posts and comments — no identity-phrase filter.
 WOMENS_SUBREDDITS = {
-    "wnba":        ["WNBA"],
-    "NWSL":        ["NWSL"],
-    "WomensSoccer": ["NWSL"],   # broader women's soccer — closest valid sport
-    "WTAtennis":   ["WTA"],     # dedicated WTA community
-    "volleyball":  ["volleyball"],  # high female fan percentage — treat as high signal
+    "wnba":              ["WNBA"],
+    "NWSL":              ["NWSL"],
+    "WomensSoccer":      ["general"],    # global women's football, not just NWSL
+    "WTAtennis":         ["WTA"],        # dedicated WTA community
+    "ProVolleyball":     ["volleyball"],
+    "PWHL":              ["general"],    # women's hockey — strong identity/belonging language
+    "CanadianWomensNT":  ["general"],    # passionate national team fan community
+    "TwoXSports":        ["general"],    # women discussing sports as fans — very high signal
+    "WomenSportsFirst":  ["general"],    # female sports fans across all sports
 }
 
-# General sports subreddits: fetch all posts broadly, but only save comments
-# that contain an explicit female fan signal phrase. Posts are only saved if
-# they also contain a signal phrase.
-GENERAL_SUBREDDITS = {
-    "nba":    ["general"],
-    "soccer": ["general"],
-    "tennis": ["general"],  # covers both ATP and WTA — use signal filter
+# General sports subreddits: searched by female fan signal queries instead of
+# scanning hot posts, which rarely surface this language in titles/bodies.
+SEARCH_SUBREDDITS = {
+    "nba":      ["general"],
+    "soccer":   ["general"],
+    "tennis":   ["general"],
+    "baseball": ["general"],
+    "nfl":      ["general"],
 }
+
+SEARCH_QUERIES = [
+    "female fan",
+    "women fans",
+    "as a woman fan",
+    "girl fan",
+]
 
 # Female fan signal detection
 FEMALE_FAN_SIGNALS = [
@@ -83,6 +95,27 @@ FEMALE_FAN_SIGNALS = [
     "experience as a woman", "experience as a female",
     # First-person identity claims
     "she/her", "woman here", "girl here", "female here",
+    # Conversion moments (Insight 3)
+    "got me into", "got me hooked", "first game i ever",
+    "that's what got me", "fell in love with", "changed everything for me",
+    "i became a fan when", "i became a fan after",
+    "never watched before", "didn't watch until",
+    # Loyalty and identity anchors (Insights 1 & 2)
+    "she's the reason", "she's why i", "she got me",
+    "my favorite player", "i've been a fan since", "grew up watching",
+    "been following since", "been a fan for years",
+    "loyalty", "will always support", "stick with",
+    # Disengagement signals (Insight 1)
+    "can't watch anymore", "stopped watching", "lost me as a fan",
+    "done with", "i gave up on", "used to love",
+    "not the same anymore", "hard to keep supporting",
+    # Trust and institution vs player split (Insight 5)
+    "love the player hate the", "still support her even",
+    "the league let", "the organization failed",
+    "front office", "ownership doesn't care",
+    # Cross-sport super fan (Insight 4)
+    "also follow", "watch both", "big fan of both",
+    "wnba and", "nwsl and", "women's soccer and",
 ]
 
 
@@ -173,6 +206,124 @@ def reddit_get(session: requests.Session, url: str, params: dict = None) -> Opti
                 return None
             time.sleep(5)
     return None
+
+# Search for subreddit with female fan 
+def search_subreddit(
+    session: requests.Session,
+    subreddit_name: str,
+    sports: list[str],
+) -> list[dict]:
+    """
+    Search a subreddit for each female fan signal query and collect matching
+    posts and their top comments. All existing quality filters apply.
+    """
+    entries = []
+    seen_post_ids = set()
+    collected_posts = 0
+    collected_comments = 0
+
+    for query in SEARCH_QUERIES:
+        url = f"{BASE_URL}/r/{subreddit_name}/search.json"
+        data = reddit_get(session, url, params={
+            "q": query,
+            "sort": "relevance",
+            "limit": 25,
+            "restrict_sr": 1,
+        })
+        time.sleep(REQUEST_DELAY)
+        if not data:
+            continue
+
+        posts = [
+            child["data"]
+            for child in data["data"]["children"]
+            if child["kind"] == "t3"
+        ]
+
+        for post in posts:
+            post_id = post["id"]
+            if post_id in seen_post_ids:
+                continue
+            seen_post_ids.add(post_id)
+
+            post_body = post.get("selftext", "").strip()
+            post_title = post.get("title", "").strip()
+            post_text = f"{post_title}\n\n{post_body}".strip()
+            post_date = ts_to_date(post["created_utc"])
+            post_url = f"https://www.reddit.com{post['permalink']}"
+            report_title = f"r/{subreddit_name}: {post_title[:120]}"
+
+            # Apply quality filters — signal already guaranteed by search query
+            post_passes = (
+                post.get("is_self")
+                and len(post_body) >= MIN_TEXT_LENGTH
+                and post.get("score", 0) >= 2
+                and not post.get("stickied", False)
+                and not is_mod_post(post_title, post_body)
+                and is_english(post_text)
+                and not is_url_only(post_text)
+            )
+
+            if post_passes:
+                entries.append({
+                    "text": post_text[:3000],
+                    "source": "reddit",
+                    "report_title": report_title,
+                    "url": post_url,
+                    "sports": sports,
+                    "record_date": post_date,
+                    "season_phase": infer_season_phase(post_text),
+                    "extra": {
+                        "subreddit": subreddit_name,
+                        "reddit_post_id": post_id,
+                        "content_type": "post",
+                        "score": post.get("score", 0),
+                        "search_query": query,
+                    },
+                })
+                collected_posts += 1
+                print(f"  [post] {post_title[:70]}")
+
+            comments = fetch_comments(session, subreddit_name, post_id)
+            for comment in comments:
+                body = comment.get("body", "").strip()
+                if not body or body in ("[deleted]", "[removed]"):
+                    continue
+                if len(body) < MIN_TEXT_LENGTH:
+                    continue
+                if not is_english(body):
+                    continue
+                if is_url_only(body):
+                    continue
+                if not has_female_fan_signal(body):
+                    continue
+
+                comment_date = ts_to_date(comment["created_utc"])
+                comment_url = f"https://www.reddit.com{comment['permalink']}"
+                entries.append({
+                    "text": body[:2000],
+                    "source": "reddit",
+                    "report_title": report_title,
+                    "url": comment_url,
+                    "sports": sports,
+                    "record_date": comment_date,
+                    "season_phase": infer_season_phase(body),
+                    "extra": {
+                        "subreddit": subreddit_name,
+                        "reddit_post_id": post_id,
+                        "reddit_comment_id": comment["id"],
+                        "content_type": "comment",
+                        "score": comment.get("score", 0),
+                        "search_query": query,
+                    },
+                })
+                collected_comments += 1
+
+    print(
+        f"  → {len(seen_post_ids)} posts scanned | "
+        f"{collected_posts} posts + {collected_comments} comments kept"
+    )
+    return entries
 
 
 def fetch_posts(session: requests.Session, subreddit_name: str) -> list[dict]:
@@ -350,9 +501,10 @@ def main():
         entries = scrape_subreddit(session, subreddit_name, sports, require_signal=False)
         all_entries.extend(entries)
 
-    print("\n── General Subreddits (female fan signals only) ────────")
-    for subreddit_name, sports in GENERAL_SUBREDDITS.items():
-        entries = scrape_subreddit(session, subreddit_name, sports, require_signal=True)
+    print("\n── General Subreddits (search-based, female fan queries) ──")
+    for subreddit_name, sports in SEARCH_SUBREDDITS.items():
+        print(f"\n[r/{subreddit_name}] Searching {len(SEARCH_QUERIES)} queries...")
+        entries = search_subreddit(session, subreddit_name, sports)
         all_entries.extend(entries)
 
     print(f"\n── Ingesting {len(all_entries)} total entries ───────────────")
