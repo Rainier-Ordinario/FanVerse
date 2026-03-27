@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from transformers import pipeline
 
@@ -7,11 +8,15 @@ sid = SentimentIntensityAnalyzer()
 emotion_classifier = pipeline(
     "text-classification",
     model="j-hartmann/emotion-english-distilroberta-base",
-    top_k=None
+    top_k=None,
+    truncation=True,
+    max_length=512,
 )
+
 # ---- LOAD DATA ----
-# update this path to wherever Rainier's JSON file lives
-with open("reddit.json", "r") as f:
+REPO_PATH = Path(__file__).parent.parent / "repository" / "repository.json"
+
+with open(REPO_PATH, "r") as f:
     posts = json.load(f)
 
 # ---- KEYWORD RULES FOR BEHAVIORAL PATHWAY ----
@@ -57,9 +62,10 @@ def classify_priority(text):
     return "none"
 
 # ---- MAIN PIPELINE ----
-results = []
+total = len(posts)
+print(f"Processing {total} records...")
 
-for post in posts:
+for i, post in enumerate(posts, 1):
     text = post["text"]
 
     # VADER Sentiment
@@ -83,34 +89,31 @@ for post in posts:
     behavioral_pathway = classify_pathway(text)
 
     # Priority signal
-    priority_signal = classify_priority(text)  
+    priority_signal = classify_priority(text)
 
     # Confidence score (average of VADER confidence + emotion confidence)
     vader_confidence = abs(compound)
     emotion_confidence = top_emotion["score"]
     confidence_score = round((vader_confidence + emotion_confidence) / 2, 2)
 
-    results.append({
-        "post_id": post["post_id"],
-        "sentiment": sentiment,
-        "sentiment_score": sentiment_score,
-        "emotional_affinity_score": emotional_affinity_score,
-        "behavioral_pathway": behavioral_pathway,
-        "confidence_score": confidence_score,
-        "priority_signal": priority_signal
-    })
+    # Merge signals directly into the record
+    post["sentiment"] = sentiment
+    post["sentiment_score"] = sentiment_score
+    post["emotional_affinity_score"] = emotional_affinity_score
+    post["behavioral_pathway"] = behavioral_pathway
+    post["priority_signal"] = priority_signal
+    post["confidence_score"] = confidence_score
 
-# ---- SAVE OUTPUT ----
-with open("signals_reddit_output.json", "w") as f:
-    json.dump(results, f, indent=2)
+    print(f"  [{i}/{total}] {post['post_id'][:8]}... {sentiment} | {behavioral_pathway} | {priority_signal}")
 
-print(f"Processed {len(results)} posts")
-print(f"Saved to signals_output.json")
+# ---- SAVE BACK TO REPOSITORY ----
+with open(REPO_PATH, "w") as f:
+    json.dump(posts, f, indent=2)
+
+print(f"\nDone. {total} records updated in {REPO_PATH}")
 
 # ---- QUICK SUMMARY ----
-for r in results[:5]:
-    print(f"\nPost: {r['post_id'][:8]}...")
-    print(f"  Sentiment: {r['sentiment']} ({r['sentiment_score']})")
-    print(f"  Affinity: {r['emotional_affinity_score']}")
-    print(f"  Pathway: {r['behavioral_pathway']}")
-    print(f"  Signal: {r['priority_signal']}")
+sentiments = [p["sentiment"] for p in posts]
+print(f"\nSentiment breakdown:")
+for label in ("positive", "neutral", "negative"):
+    print(f"  {label}: {sentiments.count(label)}")

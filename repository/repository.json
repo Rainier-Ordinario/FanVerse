@@ -12,7 +12,13 @@
     "date": "2024-02-01",
     "week": null,
     "season_phase": "unknown",
-    "ingested_at": "2026-03-27T06:48:07.256611Z"
+    "ingested_at": "2026-03-27T06:48:07.256611Z",
+    "sentiment": "positive",
+    "sentiment_score": 0.79,
+    "emotional_affinity_score": 97,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.78
   },
   {
     "record_id": "cf473530ab02beb7d4635db9",
@@ -27,7 +33,13 @@
     "date": "2024-02-01",
     "week": null,
     "season_phase": "unknown",
-    "ingested_at": "2026-03-27T06:48:07.256750Z"
+    "ingested_at": "2026-03-27T06:48:07.256750Z",
+    "sentiment": "neutral",
+    "sentiment_score": 0.5,
+    "emotional_affinity_score": 92,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.46
   },
   {
     "record_id": "228cc2c98fbf3f5609b9be17",
@@ -42,7 +54,13 @@
     "date": "2024-02-01",
     "week": null,
     "season_phase": "unknown",
-    "ingested_at": "2026-03-27T06:48:07.256760Z"
+    "ingested_at": "2026-03-27T06:48:07.256760Z",
+    "sentiment": "positive",
+    "sentiment_score": 0.7,
+    "emotional_affinity_score": 82,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.61
   },
   {
     "record_id": "4c0c839e85fe38f9340e0d6c",
@@ -57,7 +75,13 @@
     "date": "2024-01-15",
     "week": null,
     "season_phase": "unknown",
-    "ingested_at": "2026-03-27T06:48:07.256768Z"
+    "ingested_at": "2026-03-27T06:48:07.256768Z",
+    "sentiment": "positive",
+    "sentiment_score": 0.79,
+    "emotional_affinity_score": 83,
+    "behavioral_pathway": "none",
+    "priority_signal": "cross_sport_superfan",
+    "confidence_score": 0.71
   },
   {
     "record_id": "5d4b3e1714ac0a15ad706254",
@@ -72,7 +96,13 @@
     "date": "2024-01-15",
     "week": null,
     "season_phase": "unknown",
-    "ingested_at": "2026-03-27T06:48:07.256775Z"
+    "ingested_at": "2026-03-27T06:48:07.256775Z",
+    "sentiment": "positive",
+    "sentiment_score": 0.7,
+    "emotional_affinity_score": 77,
+    "behavioral_pathway": "purchase_intent",
+    "priority_signal": "none",
+    "confidence_score": 0.59
   },
   {
     "record_id": "1b128a406ee94755d0646e1a",
@@ -87,7 +117,13 @@
     "date": "2024-01-15",
     "week": null,
     "season_phase": "unknown",
-    "ingested_at": "2026-03-27T06:48:07.256862Z"
+    "ingested_at": "2026-03-27T06:48:07.256862Z",
+    "sentiment": "neutral",
+    "sentiment_score": 0.5,
+    "emotional_affinity_score": 82,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.41
   },
   {
     "record_id": "68d9214167dd440304ce1a52",
@@ -102,7 +138,13 @@
     "date": "2023-11-01",
     "week": null,
     "season_phase": "unknown",
-    "ingested_at": "2026-03-27T06:48:07.256869Z"
+    "ingested_at": "2026-03-27T06:48:07.256869Z",
+    "sentiment": "positive",
+    "sentiment_score": 0.92,
+    "emotional_affinity_score": 80,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.82
   },
   {
     "record_id": "8c80302698997375f3b41cba",
@@ -119,7 +161,13 @@
     "date": "2023-11-01",
     "week": null,
     "season_phase": "unknown",
-    "ingested_at": "2026-03-27T06:48:07.256880Z"
+    "ingested_at": "2026-03-27T06:48:07.256880Z",
+    "sentiment": "positive",
+    "sentiment_score": 0.84,
+    "emotional_affinity_score": 93,
+    "behavioral_pathway": "purchase_intent",
+    "priority_signal": "none",
+    "confidence_score": 0.81
   },
   {
     "record_id": "279e38d87216b77489227c6b",
@@ -134,7 +182,13 @@
     "date": "2023-11-01",
     "week": null,
     "season_phase": "unknown",
-    "ingested_at": "2026-03-27T06:48:07.256886Z"
+    "ingested_at": "2026-03-27T06:48:07.256886Z",
+    "sentiment": "positive",
+    "sentiment_score": 0.72,
+    "emotional_affinity_score": 85,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.65
   },
   {
     "record_id": "2b88e642918a4e62adca3a6e",
@@ -149,7 +203,13 @@
     "date": "2024-03-01",
     "week": 1,
     "season_phase": "preseason",
-    "ingested_at": "2026-03-27T06:48:07.256892Z"
+    "ingested_at": "2026-03-27T06:48:07.256892Z",
+    "sentiment": "positive",
+    "sentiment_score": 0.68,
+    "emotional_affinity_score": 69,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.53
   },
   {
     "record_id": "8553093767d846e6927c71cf",
@@ -164,7 +224,13 @@
     "date": "2024-03-01",
     "week": null,
     "season_phase": "playoff",
-    "ingested_at": "2026-03-27T06:48:07.256898Z"
+    "ingested_at": "2026-03-27T06:48:07.256898Z",
+    "sentiment": "positive",
+    "sentiment_score": 0.79,
+    "emotional_affinity_score": 70,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.64
   },
   {
     "record_id": "2958eabeb5eca46e78180e61",
@@ -179,7 +245,13 @@
     "date": "2024-03-01",
     "week": null,
     "season_phase": "unknown",
-    "ingested_at": "2026-03-27T06:48:07.256904Z"
+    "ingested_at": "2026-03-27T06:48:07.256904Z",
+    "sentiment": "positive",
+    "sentiment_score": 0.95,
+    "emotional_affinity_score": 63,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.77
   },
   {
     "record_id": "f94a17e303e34e1cb439c281",
@@ -194,7 +266,13 @@
     "date": "2024-02-15",
     "week": null,
     "season_phase": "unknown",
-    "ingested_at": "2026-03-27T06:48:07.256911Z"
+    "ingested_at": "2026-03-27T06:48:07.256911Z",
+    "sentiment": "positive",
+    "sentiment_score": 0.9,
+    "emotional_affinity_score": 87,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.84
   },
   {
     "record_id": "68df60408bc58cf38db6df62",
@@ -209,7 +287,13 @@
     "date": "2024-02-15",
     "week": 8,
     "season_phase": "midseason",
-    "ingested_at": "2026-03-27T06:48:07.256917Z"
+    "ingested_at": "2026-03-27T06:48:07.256917Z",
+    "sentiment": "positive",
+    "sentiment_score": 0.58,
+    "emotional_affinity_score": 29,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.22
   },
   {
     "record_id": "7cd8056d4b467c14137226a9",
@@ -224,7 +308,13 @@
     "date": "2024-02-15",
     "week": null,
     "season_phase": "unknown",
-    "ingested_at": "2026-03-27T06:48:07.256923Z"
+    "ingested_at": "2026-03-27T06:48:07.256923Z",
+    "sentiment": "positive",
+    "sentiment_score": 0.66,
+    "emotional_affinity_score": 76,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.54
   },
   {
     "record_id": "1c2b1b257f8ad1fb7aa07bdf",
@@ -244,7 +334,13 @@
     "reddit_post_id": "1rj8e9g",
     "reddit_comment_id": "o9rj14f",
     "content_type": "comment",
-    "score": 11
+    "score": 11,
+    "sentiment": "positive",
+    "sentiment_score": 0.89,
+    "emotional_affinity_score": 86,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.82
   },
   {
     "record_id": "861156ae8a649736b4cadf38",
@@ -264,7 +360,13 @@
     "reddit_post_id": "1rj8e9g",
     "reddit_comment_id": "o8oxloo",
     "content_type": "comment",
-    "score": 18
+    "score": 18,
+    "sentiment": "positive",
+    "sentiment_score": 0.74,
+    "emotional_affinity_score": 70,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.59
   },
   {
     "record_id": "2937043fdeeb87c7e425136e",
@@ -284,7 +386,13 @@
     "reddit_post_id": "1rj8e9g",
     "reddit_comment_id": "ob7kviu",
     "content_type": "comment",
-    "score": 6
+    "score": 6,
+    "sentiment": "negative",
+    "sentiment_score": 0.32,
+    "emotional_affinity_score": 44,
+    "behavioral_pathway": "churn_risk",
+    "priority_signal": "none",
+    "confidence_score": 0.4
   },
   {
     "record_id": "019f445f8fed0fe4b55210a7",
@@ -304,7 +412,13 @@
     "reddit_post_id": "1rj8e9g",
     "reddit_comment_id": "o8edzfc",
     "content_type": "comment",
-    "score": 7
+    "score": 7,
+    "sentiment": "positive",
+    "sentiment_score": 0.74,
+    "emotional_affinity_score": 45,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.46
   },
   {
     "record_id": "ecf3861cca17a38cf51ce2b8",
@@ -324,7 +438,13 @@
     "reddit_post_id": "1s4fwfn",
     "reddit_comment_id": "ocmqx2t",
     "content_type": "comment",
-    "score": 27
+    "score": 27,
+    "sentiment": "positive",
+    "sentiment_score": 0.89,
+    "emotional_affinity_score": 98,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.88
   },
   {
     "record_id": "a9765c68dce84ee7e667ced2",
@@ -344,7 +464,13 @@
     "reddit_post_id": "1s4pof4",
     "reddit_comment_id": "ocp20br",
     "content_type": "comment",
-    "score": 13
+    "score": 13,
+    "sentiment": "positive",
+    "sentiment_score": 0.77,
+    "emotional_affinity_score": 85,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.7
   },
   {
     "record_id": "ab3c92d37b45fa37d8bdd4cf",
@@ -364,7 +490,13 @@
     "reddit_post_id": "1s4pof4",
     "reddit_comment_id": "ocp9pcz",
     "content_type": "comment",
-    "score": 2
+    "score": 2,
+    "sentiment": "negative",
+    "sentiment_score": 0.3,
+    "emotional_affinity_score": 95,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.67
   },
   {
     "record_id": "d7292dcb951570d9fdb69805",
@@ -384,7 +516,13 @@
     "reddit_post_id": "1s4pof4",
     "reddit_comment_id": "ocpbv6e",
     "content_type": "comment",
-    "score": 2
+    "score": 2,
+    "sentiment": "positive",
+    "sentiment_score": 0.83,
+    "emotional_affinity_score": 68,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.67
   },
   {
     "record_id": "da9fb41805b9cd8aea4b1e59",
@@ -403,7 +541,13 @@
     "subreddit": "wnba",
     "reddit_post_id": "1s4vanm",
     "content_type": "post",
-    "score": 10
+    "score": 10,
+    "sentiment": "positive",
+    "sentiment_score": 1.0,
+    "emotional_affinity_score": 91,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.95
   },
   {
     "record_id": "2c0f0c490d3576d022704e37",
@@ -423,7 +567,13 @@
     "reddit_post_id": "1s4hem6",
     "reddit_comment_id": "ocn3e0m",
     "content_type": "comment",
-    "score": 28
+    "score": 28,
+    "sentiment": "positive",
+    "sentiment_score": 0.87,
+    "emotional_affinity_score": 65,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.69
   },
   {
     "record_id": "93fccdf867fcc7b1e410bcac",
@@ -443,7 +593,13 @@
     "reddit_post_id": "1s4hem6",
     "reddit_comment_id": "ocn25hv",
     "content_type": "comment",
-    "score": 21
+    "score": 21,
+    "sentiment": "positive",
+    "sentiment_score": 0.94,
+    "emotional_affinity_score": 49,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.68
   },
   {
     "record_id": "6c2e5bda550c592666546ccb",
@@ -463,7 +619,13 @@
     "reddit_post_id": "1s4hem6",
     "reddit_comment_id": "ocn83cc",
     "content_type": "comment",
-    "score": 23
+    "score": 23,
+    "sentiment": "negative",
+    "sentiment_score": 0.47,
+    "emotional_affinity_score": 55,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.3
   },
   {
     "record_id": "f10def734653c5646b647cca",
@@ -483,7 +645,13 @@
     "reddit_post_id": "1s4hem6",
     "reddit_comment_id": "ocnq3sg",
     "content_type": "comment",
-    "score": 11
+    "score": 11,
+    "sentiment": "positive",
+    "sentiment_score": 0.56,
+    "emotional_affinity_score": 91,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.52
   },
   {
     "record_id": "094f4eda843d925f5b8855e0",
@@ -503,7 +671,13 @@
     "reddit_post_id": "1s4hem6",
     "reddit_comment_id": "ocn1ltc",
     "content_type": "comment",
-    "score": 29
+    "score": 29,
+    "sentiment": "positive",
+    "sentiment_score": 0.69,
+    "emotional_affinity_score": 95,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.66
   },
   {
     "record_id": "7fd21ef7277dc0de2c589561",
@@ -523,7 +697,13 @@
     "reddit_post_id": "1s46by6",
     "reddit_comment_id": "ocklky1",
     "content_type": "comment",
-    "score": 45
+    "score": 45,
+    "sentiment": "positive",
+    "sentiment_score": 0.95,
+    "emotional_affinity_score": 90,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.9
   },
   {
     "record_id": "3925e010511d63429dccf9b5",
@@ -543,7 +723,13 @@
     "reddit_post_id": "1s46by6",
     "reddit_comment_id": "ocktzcw",
     "content_type": "comment",
-    "score": 16
+    "score": 16,
+    "sentiment": "positive",
+    "sentiment_score": 0.69,
+    "emotional_affinity_score": 96,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.67
   },
   {
     "record_id": "82fcf2415f59669c51e4ebfd",
@@ -563,7 +749,13 @@
     "reddit_post_id": "1s46by6",
     "reddit_comment_id": "oclawzh",
     "content_type": "comment",
-    "score": 29
+    "score": 29,
+    "sentiment": "negative",
+    "sentiment_score": 0.29,
+    "emotional_affinity_score": 90,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.66
   },
   {
     "record_id": "fea2d9370a032ab59858085d",
@@ -583,7 +775,13 @@
     "reddit_post_id": "1s46by6",
     "reddit_comment_id": "ocl23xp",
     "content_type": "comment",
-    "score": 7
+    "score": 7,
+    "sentiment": "positive",
+    "sentiment_score": 0.77,
+    "emotional_affinity_score": 84,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.69
   },
   {
     "record_id": "9f2e6819818e79b450dd611a",
@@ -602,7 +800,13 @@
     "subreddit": "wnba",
     "reddit_post_id": "1s4l1k5",
     "content_type": "post",
-    "score": 15
+    "score": 15,
+    "sentiment": "positive",
+    "sentiment_score": 0.88,
+    "emotional_affinity_score": 31,
+    "behavioral_pathway": "churn_risk",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.53
   },
   {
     "record_id": "5e76563a5225df5b289685c5",
@@ -622,7 +826,13 @@
     "reddit_post_id": "1s4l1k5",
     "reddit_comment_id": "ocnwese",
     "content_type": "comment",
-    "score": 5
+    "score": 5,
+    "sentiment": "positive",
+    "sentiment_score": 0.96,
+    "emotional_affinity_score": 94,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.93
   },
   {
     "record_id": "aacbc1b96cbda5482904cde2",
@@ -642,7 +852,13 @@
     "reddit_post_id": "1s4l1k5",
     "reddit_comment_id": "ocoh4jk",
     "content_type": "comment",
-    "score": 1
+    "score": 1,
+    "sentiment": "negative",
+    "sentiment_score": 0.28,
+    "emotional_affinity_score": 83,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.64
   },
   {
     "record_id": "6a608fc097b51c0a0264611d",
@@ -662,7 +878,13 @@
     "reddit_post_id": "1s4a6n4",
     "reddit_comment_id": "ocljeqi",
     "content_type": "comment",
-    "score": 16
+    "score": 16,
+    "sentiment": "positive",
+    "sentiment_score": 0.82,
+    "emotional_affinity_score": 94,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.79
   },
   {
     "record_id": "07760e9e233e3588736a26da",
@@ -682,7 +904,13 @@
     "reddit_post_id": "1s4a6n4",
     "reddit_comment_id": "oclsu4r",
     "content_type": "comment",
-    "score": 10
+    "score": 10,
+    "sentiment": "negative",
+    "sentiment_score": 0.24,
+    "emotional_affinity_score": 37,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.45
   },
   {
     "record_id": "2b3edafb9d48299aafa60f46",
@@ -702,7 +930,13 @@
     "reddit_post_id": "1s4d6f4",
     "reddit_comment_id": "ocmfzsj",
     "content_type": "comment",
-    "score": 8
+    "score": 8,
+    "sentiment": "positive",
+    "sentiment_score": 0.76,
+    "emotional_affinity_score": 61,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.57
   },
   {
     "record_id": "f6b7be5609335023d809ed0f",
@@ -721,7 +955,13 @@
     "subreddit": "wnba",
     "reddit_post_id": "1s4c1t8",
     "content_type": "post",
-    "score": 15
+    "score": 15,
+    "sentiment": "positive",
+    "sentiment_score": 0.59,
+    "emotional_affinity_score": 92,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.55
   },
   {
     "record_id": "ebf49fbf9f2910ed8a9bb444",
@@ -741,7 +981,13 @@
     "reddit_post_id": "1s4c1t8",
     "reddit_comment_id": "oclw3zv",
     "content_type": "comment",
-    "score": 5
+    "score": 5,
+    "sentiment": "positive",
+    "sentiment_score": 0.65,
+    "emotional_affinity_score": 80,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.55
   },
   {
     "record_id": "7d78e8aceeb5798f77072ca9",
@@ -761,7 +1007,13 @@
     "reddit_post_id": "1s4c1t8",
     "reddit_comment_id": "oclx0j2",
     "content_type": "comment",
-    "score": 4
+    "score": 4,
+    "sentiment": "positive",
+    "sentiment_score": 0.93,
+    "emotional_affinity_score": 90,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.88
   },
   {
     "record_id": "0c002effcaef838d5dfc0e6d",
@@ -781,7 +1033,13 @@
     "reddit_post_id": "1s4c1t8",
     "reddit_comment_id": "ocm60de",
     "content_type": "comment",
-    "score": 2
+    "score": 2,
+    "sentiment": "positive",
+    "sentiment_score": 0.91,
+    "emotional_affinity_score": 86,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.84
   },
   {
     "record_id": "6abd040c3248c48230580d21",
@@ -801,7 +1059,13 @@
     "reddit_post_id": "1s4c1t8",
     "reddit_comment_id": "ocn50z7",
     "content_type": "comment",
-    "score": 2
+    "score": 2,
+    "sentiment": "positive",
+    "sentiment_score": 0.79,
+    "emotional_affinity_score": 73,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.65
   },
   {
     "record_id": "3eaf4d3e845f4ea72c6b5896",
@@ -821,7 +1085,13 @@
     "reddit_post_id": "1s4hld7",
     "reddit_comment_id": "oco86rv",
     "content_type": "comment",
-    "score": 3
+    "score": 3,
+    "sentiment": "positive",
+    "sentiment_score": 0.77,
+    "emotional_affinity_score": 48,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.51
   },
   {
     "record_id": "41917e33084fd0c329950271",
@@ -841,7 +1111,13 @@
     "reddit_post_id": "1s3nwed",
     "reddit_comment_id": "ocgw7gl",
     "content_type": "comment",
-    "score": 13
+    "score": 13,
+    "sentiment": "positive",
+    "sentiment_score": 0.82,
+    "emotional_affinity_score": 54,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.59
   },
   {
     "record_id": "c109009b957a367eefddb3f5",
@@ -860,7 +1136,13 @@
     "subreddit": "wnba",
     "reddit_post_id": "1s3ohlk",
     "content_type": "post",
-    "score": 76
+    "score": 76,
+    "sentiment": "negative",
+    "sentiment_score": 0.14,
+    "emotional_affinity_score": 93,
+    "behavioral_pathway": "identity_attachment",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.83
   },
   {
     "record_id": "84a52e788fc256d350fbae8c",
@@ -880,7 +1162,13 @@
     "reddit_post_id": "1s3ohlk",
     "reddit_comment_id": "ocgzyf9",
     "content_type": "comment",
-    "score": 36
+    "score": 36,
+    "sentiment": "negative",
+    "sentiment_score": 0.1,
+    "emotional_affinity_score": 79,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.79
   },
   {
     "record_id": "ea3daac06e37c9b16ff88345",
@@ -900,7 +1188,13 @@
     "reddit_post_id": "1s3ohlk",
     "reddit_comment_id": "ochbxb6",
     "content_type": "comment",
-    "score": 19
+    "score": 19,
+    "sentiment": "positive",
+    "sentiment_score": 0.85,
+    "emotional_affinity_score": 55,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.62
   },
   {
     "record_id": "eb75f3a2aacbb5bd00986bcf",
@@ -919,7 +1213,13 @@
     "subreddit": "wnba",
     "reddit_post_id": "1s3zk0j",
     "content_type": "post",
-    "score": 14
+    "score": 14,
+    "sentiment": "positive",
+    "sentiment_score": 0.97,
+    "emotional_affinity_score": 84,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.89
   },
   {
     "record_id": "2aba4825ebba8055ee1feb85",
@@ -939,7 +1239,13 @@
     "reddit_post_id": "1s3zk0j",
     "reddit_comment_id": "ocja1bn",
     "content_type": "comment",
-    "score": 18
+    "score": 18,
+    "sentiment": "negative",
+    "sentiment_score": 0.14,
+    "emotional_affinity_score": 98,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.85
   },
   {
     "record_id": "9cfe7e415122cbe72d664220",
@@ -959,7 +1265,13 @@
     "reddit_post_id": "1s3zk0j",
     "reddit_comment_id": "ocki9ex",
     "content_type": "comment",
-    "score": 6
+    "score": 6,
+    "sentiment": "positive",
+    "sentiment_score": 1.0,
+    "emotional_affinity_score": 75,
+    "behavioral_pathway": "community_influence",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.87
   },
   {
     "record_id": "552a793fb9893d6bc1caf1aa",
@@ -978,7 +1290,13 @@
     "subreddit": "wnba",
     "reddit_post_id": "1s3p5xd",
     "content_type": "post",
-    "score": 60
+    "score": 60,
+    "sentiment": "positive",
+    "sentiment_score": 0.76,
+    "emotional_affinity_score": 64,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.59
   },
   {
     "record_id": "8b33744b0a30b252c25b4249",
@@ -998,7 +1316,13 @@
     "reddit_post_id": "1s3p5xd",
     "reddit_comment_id": "och5pov",
     "content_type": "comment",
-    "score": 11
+    "score": 11,
+    "sentiment": "positive",
+    "sentiment_score": 0.59,
+    "emotional_affinity_score": 48,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.33
   },
   {
     "record_id": "aa8e0aa563b98db30e97e05a",
@@ -1018,7 +1342,13 @@
     "reddit_post_id": "1s3p5xd",
     "reddit_comment_id": "ochnb5c",
     "content_type": "comment",
-    "score": 3
+    "score": 3,
+    "sentiment": "negative",
+    "sentiment_score": 0.22,
+    "emotional_affinity_score": 89,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.72
   },
   {
     "record_id": "6f7f18c4675d13299558cbb0",
@@ -1038,7 +1368,13 @@
     "reddit_post_id": "1s48kai",
     "reddit_comment_id": "oclo0mg",
     "content_type": "comment",
-    "score": 9
+    "score": 9,
+    "sentiment": "positive",
+    "sentiment_score": 0.88,
+    "emotional_affinity_score": 94,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.85
   },
   {
     "record_id": "055a2b3f20a752c98d845b66",
@@ -1058,7 +1394,13 @@
     "reddit_post_id": "1s48kai",
     "reddit_comment_id": "ocl4bxn",
     "content_type": "comment",
-    "score": 8
+    "score": 8,
+    "sentiment": "neutral",
+    "sentiment_score": 0.51,
+    "emotional_affinity_score": 80,
+    "behavioral_pathway": "none",
+    "priority_signal": "identity_anchor",
+    "confidence_score": 0.41
   },
   {
     "record_id": "d3eda5ce4c15c4d246e604ea",
@@ -1078,7 +1420,13 @@
     "reddit_post_id": "1s3cyzc",
     "reddit_comment_id": "oceivks",
     "content_type": "comment",
-    "score": 45
+    "score": 45,
+    "sentiment": "negative",
+    "sentiment_score": 0.07,
+    "emotional_affinity_score": 51,
+    "behavioral_pathway": "purchase_intent",
+    "priority_signal": "none",
+    "confidence_score": 0.68
   },
   {
     "record_id": "c6fab2bf4364a870be0c0c5a",
@@ -1098,7 +1446,13 @@
     "reddit_post_id": "1s3cyzc",
     "reddit_comment_id": "ocekmur",
     "content_type": "comment",
-    "score": 14
+    "score": 14,
+    "sentiment": "positive",
+    "sentiment_score": 0.78,
+    "emotional_affinity_score": 97,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.76
   },
   {
     "record_id": "2a77350fec4066ae599e511e",
@@ -1118,7 +1472,13 @@
     "reddit_post_id": "1s3x3ho",
     "reddit_comment_id": "ociv7w2",
     "content_type": "comment",
-    "score": 21
+    "score": 21,
+    "sentiment": "positive",
+    "sentiment_score": 0.92,
+    "emotional_affinity_score": 92,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.87
   },
   {
     "record_id": "3e110ecc21c4f50ab976b844",
@@ -1138,7 +1498,13 @@
     "reddit_post_id": "1s3o4pw",
     "reddit_comment_id": "och1cim",
     "content_type": "comment",
-    "score": 46
+    "score": 46,
+    "sentiment": "positive",
+    "sentiment_score": 0.96,
+    "emotional_affinity_score": 42,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.67
   },
   {
     "record_id": "5c815dfd6978c866497515a7",
@@ -1158,7 +1524,13 @@
     "reddit_post_id": "1s3o4pw",
     "reddit_comment_id": "ocgyeqh",
     "content_type": "comment",
-    "score": 6
+    "score": 6,
+    "sentiment": "negative",
+    "sentiment_score": 0.32,
+    "emotional_affinity_score": 95,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.66
   },
   {
     "record_id": "b036d4dfa765f10b887d70e7",
@@ -1178,7 +1550,13 @@
     "reddit_post_id": "1s3o4pw",
     "reddit_comment_id": "ocgz92o",
     "content_type": "comment",
-    "score": 5
+    "score": 5,
+    "sentiment": "positive",
+    "sentiment_score": 0.92,
+    "emotional_affinity_score": 57,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.71
   },
   {
     "record_id": "6911d4915fa03d10f9b1587f",
@@ -1198,7 +1576,13 @@
     "reddit_post_id": "1ryx0ul",
     "reddit_comment_id": "obi4apf",
     "content_type": "comment",
-    "score": 6
+    "score": 6,
+    "sentiment": "neutral",
+    "sentiment_score": 0.5,
+    "emotional_affinity_score": 87,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.43
   },
   {
     "record_id": "1e39735c7c44ea92d5f65c81",
@@ -1218,7 +1602,13 @@
     "reddit_post_id": "1ryx0ul",
     "reddit_comment_id": "obhq26w",
     "content_type": "comment",
-    "score": 16
+    "score": 16,
+    "sentiment": "negative",
+    "sentiment_score": 0.2,
+    "emotional_affinity_score": 84,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.72
   },
   {
     "record_id": "38d5e50f098dbe4949401d2b",
@@ -1238,7 +1628,13 @@
     "reddit_post_id": "1s31s6q",
     "reddit_comment_id": "ociw9hl",
     "content_type": "comment",
-    "score": 3
+    "score": 3,
+    "sentiment": "neutral",
+    "sentiment_score": 0.5,
+    "emotional_affinity_score": 59,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.3
   },
   {
     "record_id": "117db61c40c874381a3416ce",
@@ -1258,7 +1654,13 @@
     "reddit_post_id": "1s31s6q",
     "reddit_comment_id": "ocivtza",
     "content_type": "comment",
-    "score": 1
+    "score": 1,
+    "sentiment": "neutral",
+    "sentiment_score": 0.49,
+    "emotional_affinity_score": 86,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.45
   },
   {
     "record_id": "3d7f73688493cbc54916ea20",
@@ -1278,7 +1680,13 @@
     "reddit_post_id": "1s31s6q",
     "reddit_comment_id": "ocivmj8",
     "content_type": "comment",
-    "score": 2
+    "score": 2,
+    "sentiment": "positive",
+    "sentiment_score": 0.58,
+    "emotional_affinity_score": 65,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.4
   },
   {
     "record_id": "cbe03f7f38ea9e7af7110512",
@@ -1298,7 +1706,13 @@
     "reddit_post_id": "1s4s5pn",
     "reddit_comment_id": "ocpgd2j",
     "content_type": "comment",
-    "score": 34
+    "score": 34,
+    "sentiment": "neutral",
+    "sentiment_score": 0.5,
+    "emotional_affinity_score": 78,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.39
   },
   {
     "record_id": "89871bf0c775d691d330abfa",
@@ -1318,7 +1732,13 @@
     "reddit_post_id": "1s4s5pn",
     "reddit_comment_id": "ocpir9t",
     "content_type": "comment",
-    "score": 8
+    "score": 8,
+    "sentiment": "positive",
+    "sentiment_score": 0.66,
+    "emotional_affinity_score": 86,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.59
   },
   {
     "record_id": "bca947bcf919ed907aa123d4",
@@ -1338,7 +1758,13 @@
     "reddit_post_id": "1s4teda",
     "reddit_comment_id": "ocpn411",
     "content_type": "comment",
-    "score": 58
+    "score": 58,
+    "sentiment": "negative",
+    "sentiment_score": 0.03,
+    "emotional_affinity_score": 66,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.8
   },
   {
     "record_id": "581479ecb41b7e5ed480422d",
@@ -1358,7 +1784,13 @@
     "reddit_post_id": "1s4teda",
     "reddit_comment_id": "ocptod2",
     "content_type": "comment",
-    "score": 10
+    "score": 10,
+    "sentiment": "negative",
+    "sentiment_score": 0.06,
+    "emotional_affinity_score": 28,
+    "behavioral_pathway": "churn_risk",
+    "priority_signal": "none",
+    "confidence_score": 0.59
   },
   {
     "record_id": "43cf6de42bf949758900489e",
@@ -1378,7 +1810,13 @@
     "reddit_post_id": "1s4v3h2",
     "reddit_comment_id": "ocq1f5l",
     "content_type": "comment",
-    "score": 2
+    "score": 2,
+    "sentiment": "positive",
+    "sentiment_score": 0.79,
+    "emotional_affinity_score": 84,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.71
   },
   {
     "record_id": "4d692d1542cdbe2a830ad64a",
@@ -1397,7 +1835,13 @@
     "subreddit": "NWSL",
     "reddit_post_id": "1s4k64m",
     "content_type": "post",
-    "score": 67
+    "score": 67,
+    "sentiment": "positive",
+    "sentiment_score": 0.98,
+    "emotional_affinity_score": 47,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.71
   },
   {
     "record_id": "425edfa07f1b89f3d1a69e63",
@@ -1417,7 +1861,13 @@
     "reddit_post_id": "1s4k64m",
     "reddit_comment_id": "ocnosb8",
     "content_type": "comment",
-    "score": 99
+    "score": 99,
+    "sentiment": "positive",
+    "sentiment_score": 0.97,
+    "emotional_affinity_score": 92,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.93
   },
   {
     "record_id": "4d0b18e326487fcacd372a52",
@@ -1437,7 +1887,13 @@
     "reddit_post_id": "1s4k64m",
     "reddit_comment_id": "ocnmzim",
     "content_type": "comment",
-    "score": 23
+    "score": 23,
+    "sentiment": "positive",
+    "sentiment_score": 0.85,
+    "emotional_affinity_score": 49,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.6
   },
   {
     "record_id": "14077ad9f183034bd4c0f83f",
@@ -1457,7 +1913,13 @@
     "reddit_post_id": "1s4k64m",
     "reddit_comment_id": "ocnscgt",
     "content_type": "comment",
-    "score": 22
+    "score": 22,
+    "sentiment": "positive",
+    "sentiment_score": 0.99,
+    "emotional_affinity_score": 50,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.73
   },
   {
     "record_id": "36cbbf3633ecc25cbc72022b",
@@ -1477,7 +1939,13 @@
     "reddit_post_id": "1s4k64m",
     "reddit_comment_id": "ocnyzwu",
     "content_type": "comment",
-    "score": 34
+    "score": 34,
+    "sentiment": "positive",
+    "sentiment_score": 0.92,
+    "emotional_affinity_score": 90,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.87
   },
   {
     "record_id": "16e5dc2ec00ac9102bc8d539",
@@ -1497,7 +1965,13 @@
     "reddit_post_id": "1s47v39",
     "reddit_comment_id": "ocomkan",
     "content_type": "comment",
-    "score": 2
+    "score": 2,
+    "sentiment": "positive",
+    "sentiment_score": 0.97,
+    "emotional_affinity_score": 42,
+    "behavioral_pathway": "none",
+    "priority_signal": "identity_anchor",
+    "confidence_score": 0.68
   },
   {
     "record_id": "2d9fc1b256615e4198867193",
@@ -1517,7 +1991,13 @@
     "reddit_post_id": "1s4rgg5",
     "reddit_comment_id": "ocp7lm6",
     "content_type": "comment",
-    "score": 14
+    "score": 14,
+    "sentiment": "negative",
+    "sentiment_score": 0.47,
+    "emotional_affinity_score": 37,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.21
   },
   {
     "record_id": "f1bf648fc5a52b80e1072231",
@@ -1537,7 +2017,13 @@
     "reddit_post_id": "1s4rgg5",
     "reddit_comment_id": "ocp8767",
     "content_type": "comment",
-    "score": 6
+    "score": 6,
+    "sentiment": "negative",
+    "sentiment_score": 0.47,
+    "emotional_affinity_score": 71,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.38
   },
   {
     "record_id": "62aaff26d7888d7d46fceaf3",
@@ -1557,7 +2043,13 @@
     "reddit_post_id": "1s4gbe8",
     "reddit_comment_id": "ocmvwhh",
     "content_type": "comment",
-    "score": 20
+    "score": 20,
+    "sentiment": "positive",
+    "sentiment_score": 0.7,
+    "emotional_affinity_score": 96,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.68
   },
   {
     "record_id": "b30761ba13c93f3f7c0fa47f",
@@ -1577,7 +2069,13 @@
     "reddit_post_id": "1s3x9du",
     "reddit_comment_id": "ocj1egf",
     "content_type": "comment",
-    "score": 42
+    "score": 42,
+    "sentiment": "positive",
+    "sentiment_score": 0.71,
+    "emotional_affinity_score": 96,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.69
   },
   {
     "record_id": "943ee4a2bee8e12f25e48f91",
@@ -1597,7 +2095,13 @@
     "reddit_post_id": "1s47dqh",
     "reddit_comment_id": "ocmqfdb",
     "content_type": "comment",
-    "score": 2
+    "score": 2,
+    "sentiment": "positive",
+    "sentiment_score": 0.91,
+    "emotional_affinity_score": 92,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.87
   },
   {
     "record_id": "ce2a8cf98bbe1c6968a57820",
@@ -1617,7 +2121,13 @@
     "reddit_post_id": "1s4hkmc",
     "reddit_comment_id": "ocna28p",
     "content_type": "comment",
-    "score": 5
+    "score": 5,
+    "sentiment": "positive",
+    "sentiment_score": 0.93,
+    "emotional_affinity_score": 44,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.65
   },
   {
     "record_id": "83a6a00a7e96011c45384d37",
@@ -1637,7 +2147,13 @@
     "reddit_post_id": "1s3tnxj",
     "reddit_comment_id": "oci4ybm",
     "content_type": "comment",
-    "score": 68
+    "score": 68,
+    "sentiment": "positive",
+    "sentiment_score": 0.79,
+    "emotional_affinity_score": 38,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.48
   },
   {
     "record_id": "27f86187144933c1741cc81e",
@@ -1656,7 +2172,13 @@
     "subreddit": "NWSL",
     "reddit_post_id": "1s49h9c",
     "content_type": "post",
-    "score": 31
+    "score": 31,
+    "sentiment": "positive",
+    "sentiment_score": 1.0,
+    "emotional_affinity_score": 47,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.73
   },
   {
     "record_id": "2930846e90ffd4d75af39d12",
@@ -1676,7 +2198,13 @@
     "reddit_post_id": "1s49h9c",
     "reddit_comment_id": "oclfe6u",
     "content_type": "comment",
-    "score": 8
+    "score": 8,
+    "sentiment": "positive",
+    "sentiment_score": 0.97,
+    "emotional_affinity_score": 86,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.9
   },
   {
     "record_id": "ca3d7b3747f3affd5d995486",
@@ -1696,7 +2224,13 @@
     "reddit_post_id": "1s49h9c",
     "reddit_comment_id": "ocna3tl",
     "content_type": "comment",
-    "score": 3
+    "score": 3,
+    "sentiment": "positive",
+    "sentiment_score": 0.9,
+    "emotional_affinity_score": 62,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.71
   },
   {
     "record_id": "f7f1e151d8812a15eb1cadf7",
@@ -1716,7 +2250,13 @@
     "reddit_post_id": "1s401do",
     "reddit_comment_id": "ock7l1t",
     "content_type": "comment",
-    "score": 21
+    "score": 21,
+    "sentiment": "positive",
+    "sentiment_score": 0.99,
+    "emotional_affinity_score": 95,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.96
   },
   {
     "record_id": "3514801190595d3b5a1e86fb",
@@ -1736,7 +2276,13 @@
     "reddit_post_id": "1s401do",
     "reddit_comment_id": "ocjnowg",
     "content_type": "comment",
-    "score": 13
+    "score": 13,
+    "sentiment": "positive",
+    "sentiment_score": 0.96,
+    "emotional_affinity_score": 90,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.91
   },
   {
     "record_id": "b422bf5346db3630d15cf3b6",
@@ -1756,7 +2302,13 @@
     "reddit_post_id": "1s3ss4s",
     "reddit_comment_id": "ocl45mw",
     "content_type": "comment",
-    "score": 2
+    "score": 2,
+    "sentiment": "positive",
+    "sentiment_score": 0.99,
+    "emotional_affinity_score": 91,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.94
   },
   {
     "record_id": "caa350f44a9c033141d806b0",
@@ -1776,7 +2328,13 @@
     "reddit_post_id": "1s3x1jq",
     "reddit_comment_id": "ocjq7xd",
     "content_type": "comment",
-    "score": 2
+    "score": 2,
+    "sentiment": "positive",
+    "sentiment_score": 0.98,
+    "emotional_affinity_score": 60,
+    "behavioral_pathway": "churn_risk",
+    "priority_signal": "none",
+    "confidence_score": 0.78
   },
   {
     "record_id": "b93baa576dfe6c75b64da895",
@@ -1796,7 +2354,13 @@
     "reddit_post_id": "1s1g7vy",
     "reddit_comment_id": "ocd1dsm",
     "content_type": "comment",
-    "score": 3
+    "score": 3,
+    "sentiment": "positive",
+    "sentiment_score": 0.76,
+    "emotional_affinity_score": 83,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.67
   },
   {
     "record_id": "df7ebf9a4475bf8a6012db38",
@@ -1816,7 +2380,13 @@
     "reddit_post_id": "1s4cvbm",
     "reddit_comment_id": "ocm3gag",
     "content_type": "comment",
-    "score": 13
+    "score": 13,
+    "sentiment": "positive",
+    "sentiment_score": 0.91,
+    "emotional_affinity_score": 94,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.88
   },
   {
     "record_id": "8f63fb5eeeee5f944d40e602",
@@ -1836,7 +2406,13 @@
     "reddit_post_id": "1s4rjfk",
     "reddit_comment_id": "ocpfzet",
     "content_type": "comment",
-    "score": 1
+    "score": 1,
+    "sentiment": "negative",
+    "sentiment_score": 0.12,
+    "emotional_affinity_score": 85,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.8
   },
   {
     "record_id": "33c880c1490dc559c34eb8b9",
@@ -1856,7 +2432,13 @@
     "reddit_post_id": "1s4bcch",
     "reddit_comment_id": "oclqx3n",
     "content_type": "comment",
-    "score": 6
+    "score": 6,
+    "sentiment": "positive",
+    "sentiment_score": 0.58,
+    "emotional_affinity_score": 92,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.54
   },
   {
     "record_id": "22bfa2eea1a60b63e5a2a162",
@@ -1876,7 +2458,13 @@
     "reddit_post_id": "1s45zfl",
     "reddit_comment_id": "ockkgmd",
     "content_type": "comment",
-    "score": 12
+    "score": 12,
+    "sentiment": "neutral",
+    "sentiment_score": 0.5,
+    "emotional_affinity_score": 97,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.48
   },
   {
     "record_id": "10e840bff97976c4b28d981a",
@@ -1896,7 +2484,13 @@
     "reddit_post_id": "1s45zfl",
     "reddit_comment_id": "ocku1y5",
     "content_type": "comment",
-    "score": 8
+    "score": 8,
+    "sentiment": "neutral",
+    "sentiment_score": 0.5,
+    "emotional_affinity_score": 96,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.48
   },
   {
     "record_id": "11cd300aa2e18de250a6955e",
@@ -1916,7 +2510,13 @@
     "reddit_post_id": "1s45zfl",
     "reddit_comment_id": "ocko2ar",
     "content_type": "comment",
-    "score": 7
+    "score": 7,
+    "sentiment": "positive",
+    "sentiment_score": 0.86,
+    "emotional_affinity_score": 73,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.72
   },
   {
     "record_id": "f7c10874431d8944d8baeeca",
@@ -1936,7 +2536,13 @@
     "reddit_post_id": "1s45zfl",
     "reddit_comment_id": "ockmcjy",
     "content_type": "comment",
-    "score": 6
+    "score": 6,
+    "sentiment": "positive",
+    "sentiment_score": 0.88,
+    "emotional_affinity_score": 97,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.86
   },
   {
     "record_id": "b499506288baff802535ed2c",
@@ -1956,7 +2562,13 @@
     "reddit_post_id": "1s45zfl",
     "reddit_comment_id": "ockpq3d",
     "content_type": "comment",
-    "score": 2
+    "score": 2,
+    "sentiment": "positive",
+    "sentiment_score": 0.88,
+    "emotional_affinity_score": 52,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.64
   },
   {
     "record_id": "f41a4a20f5cb2080763711f5",
@@ -1976,7 +2588,13 @@
     "reddit_post_id": "1s3kaur",
     "reddit_comment_id": "ocg3dke",
     "content_type": "comment",
-    "score": 77
+    "score": 77,
+    "sentiment": "positive",
+    "sentiment_score": 0.85,
+    "emotional_affinity_score": 87,
+    "behavioral_pathway": "identity_attachment",
+    "priority_signal": "none",
+    "confidence_score": 0.79
   },
   {
     "record_id": "506a2eb6a936f44cc35d2f40",
@@ -1996,7 +2614,13 @@
     "reddit_post_id": "1s3xej7",
     "reddit_comment_id": "ocj3iva",
     "content_type": "comment",
-    "score": 9
+    "score": 9,
+    "sentiment": "positive",
+    "sentiment_score": 0.97,
+    "emotional_affinity_score": 55,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.75
   },
   {
     "record_id": "214bd04399af3e10c482388e",
@@ -2016,7 +2640,13 @@
     "reddit_post_id": "1s3opu0",
     "reddit_comment_id": "ocinlak",
     "content_type": "comment",
-    "score": 5
+    "score": 5,
+    "sentiment": "positive",
+    "sentiment_score": 0.96,
+    "emotional_affinity_score": 83,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.88
   },
   {
     "record_id": "1512a96eb20c402ea4605b42",
@@ -2036,7 +2666,13 @@
     "reddit_post_id": "1s3kxqd",
     "reddit_comment_id": "ocg8rsl",
     "content_type": "comment",
-    "score": 18
+    "score": 18,
+    "sentiment": "positive",
+    "sentiment_score": 0.9,
+    "emotional_affinity_score": 83,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.81
   },
   {
     "record_id": "2f707fb2d2ceeec5267768ba",
@@ -2056,7 +2692,13 @@
     "reddit_post_id": "1s3kxqd",
     "reddit_comment_id": "och89sv",
     "content_type": "comment",
-    "score": 1
+    "score": 1,
+    "sentiment": "positive",
+    "sentiment_score": 0.82,
+    "emotional_affinity_score": 59,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.62
   },
   {
     "record_id": "bbb0dcd6dd40f4b033a4e9b8",
@@ -2076,7 +2718,13 @@
     "reddit_post_id": "1p0w2ky",
     "reddit_comment_id": "npmb0c7",
     "content_type": "comment",
-    "score": 23
+    "score": 23,
+    "sentiment": "positive",
+    "sentiment_score": 0.96,
+    "emotional_affinity_score": 44,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.68
   },
   {
     "record_id": "f10cf66ba6ef48a562d4ee7a",
@@ -2096,7 +2744,13 @@
     "reddit_post_id": "1p0w2ky",
     "reddit_comment_id": "nqtqmqj",
     "content_type": "comment",
-    "score": 3
+    "score": 3,
+    "sentiment": "positive",
+    "sentiment_score": 0.8,
+    "emotional_affinity_score": 51,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.56
   },
   {
     "record_id": "2a272725851297e64daba853",
@@ -2116,7 +2770,13 @@
     "reddit_post_id": "1p0w2ky",
     "reddit_comment_id": "o7ooyyc",
     "content_type": "comment",
-    "score": 2
+    "score": 2,
+    "sentiment": "positive",
+    "sentiment_score": 0.87,
+    "emotional_affinity_score": 62,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.68
   },
   {
     "record_id": "4e41cb166640a3b0ed921f5c",
@@ -2136,7 +2796,13 @@
     "reddit_post_id": "1p0w2ky",
     "reddit_comment_id": "oarr9rf",
     "content_type": "comment",
-    "score": 2
+    "score": 2,
+    "sentiment": "positive",
+    "sentiment_score": 0.9,
+    "emotional_affinity_score": 63,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.72
   },
   {
     "record_id": "ee87c241bfcd1e15af819283",
@@ -2156,7 +2822,13 @@
     "reddit_post_id": "1p0ll1z",
     "reddit_comment_id": "npk0suy",
     "content_type": "comment",
-    "score": 7
+    "score": 7,
+    "sentiment": "positive",
+    "sentiment_score": 0.81,
+    "emotional_affinity_score": 35,
+    "behavioral_pathway": "churn_risk",
+    "priority_signal": "none",
+    "confidence_score": 0.49
   },
   {
     "record_id": "67958c59bcf285547b9c5032",
@@ -2176,7 +2848,13 @@
     "reddit_post_id": "1p0ll1z",
     "reddit_comment_id": "npjx5qh",
     "content_type": "comment",
-    "score": 3
+    "score": 3,
+    "sentiment": "positive",
+    "sentiment_score": 0.56,
+    "emotional_affinity_score": 87,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.5
   },
   {
     "record_id": "039368efbbb698c5d37458b1",
@@ -2196,7 +2874,13 @@
     "reddit_post_id": "1s4kh2p",
     "reddit_comment_id": "ocnx44l",
     "content_type": "comment",
-    "score": 305
+    "score": 305,
+    "sentiment": "negative",
+    "sentiment_score": 0.33,
+    "emotional_affinity_score": 39,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.36
   },
   {
     "record_id": "fecbd461fc58fb55e1d184c9",
@@ -2216,7 +2900,13 @@
     "reddit_post_id": "1s4av8y",
     "reddit_comment_id": "oclpltq",
     "content_type": "comment",
-    "score": 26
+    "score": 26,
+    "sentiment": "neutral",
+    "sentiment_score": 0.52,
+    "emotional_affinity_score": 44,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.24
   },
   {
     "record_id": "affe682c93006a0979396fe8",
@@ -2236,7 +2926,13 @@
     "reddit_post_id": "1s4d6ha",
     "reddit_comment_id": "ocm4lgn",
     "content_type": "comment",
-    "score": 19
+    "score": 19,
+    "sentiment": "positive",
+    "sentiment_score": 0.67,
+    "emotional_affinity_score": 98,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.66
   },
   {
     "record_id": "73f6d50d793174e59d911cb9",
@@ -2256,7 +2952,13 @@
     "reddit_post_id": "1s3y84l",
     "reddit_comment_id": "ocj53dg",
     "content_type": "comment",
-    "score": 109
+    "score": 109,
+    "sentiment": "positive",
+    "sentiment_score": 0.99,
+    "emotional_affinity_score": 59,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.79
   },
   {
     "record_id": "c4e0d586eae5f550c74ff058",
@@ -2276,7 +2978,13 @@
     "reddit_post_id": "1s3y84l",
     "reddit_comment_id": "ocj1tn7",
     "content_type": "comment",
-    "score": 58
+    "score": 58,
+    "sentiment": "negative",
+    "sentiment_score": 0.45,
+    "emotional_affinity_score": 72,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.41
   },
   {
     "record_id": "648aa18adf6d5674b8972c5a",
@@ -2296,7 +3004,13 @@
     "reddit_post_id": "1s3y84l",
     "reddit_comment_id": "ockqky8",
     "content_type": "comment",
-    "score": 21
+    "score": 21,
+    "sentiment": "positive",
+    "sentiment_score": 0.89,
+    "emotional_affinity_score": 61,
+    "behavioral_pathway": "purchase_intent",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.7
   },
   {
     "record_id": "4ff9244ed39a0a98df2e26dc",
@@ -2316,7 +3030,13 @@
     "reddit_post_id": "1s4dkoz",
     "reddit_comment_id": "ocm7gb8",
     "content_type": "comment",
-    "score": 30
+    "score": 30,
+    "sentiment": "positive",
+    "sentiment_score": 0.74,
+    "emotional_affinity_score": 83,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.65
   },
   {
     "record_id": "d569a1592b948353b40a1315",
@@ -2336,7 +3056,13 @@
     "reddit_post_id": "1s4dkoz",
     "reddit_comment_id": "ocm94ol",
     "content_type": "comment",
-    "score": 22
+    "score": 22,
+    "sentiment": "positive",
+    "sentiment_score": 0.7,
+    "emotional_affinity_score": 36,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.38
   },
   {
     "record_id": "76d4f3713582e9eb2e5f555a",
@@ -2356,7 +3082,13 @@
     "reddit_post_id": "1s4tcoq",
     "reddit_comment_id": "ocplb1d",
     "content_type": "comment",
-    "score": 4
+    "score": 4,
+    "sentiment": "positive",
+    "sentiment_score": 0.96,
+    "emotional_affinity_score": 93,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.92
   },
   {
     "record_id": "9763938be5c4447a6f4948d3",
@@ -2376,7 +3108,13 @@
     "reddit_post_id": "1s4tcoq",
     "reddit_comment_id": "ocplb0q",
     "content_type": "comment",
-    "score": 1
+    "score": 1,
+    "sentiment": "positive",
+    "sentiment_score": 0.89,
+    "emotional_affinity_score": 85,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.81
   },
   {
     "record_id": "edc0ac9dbfa44d3268b01c46",
@@ -2396,7 +3134,13 @@
     "reddit_post_id": "1s4444l",
     "reddit_comment_id": "ock3m8r",
     "content_type": "comment",
-    "score": 1
+    "score": 1,
+    "sentiment": "positive",
+    "sentiment_score": 0.89,
+    "emotional_affinity_score": 84,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.81
   },
   {
     "record_id": "424aaffc25ef9b606fc0cff8",
@@ -2416,7 +3160,13 @@
     "reddit_post_id": "1s4sa9l",
     "reddit_comment_id": "ocpdnem",
     "content_type": "comment",
-    "score": 1
+    "score": 1,
+    "sentiment": "positive",
+    "sentiment_score": 0.89,
+    "emotional_affinity_score": 85,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.82
   },
   {
     "record_id": "655726be90d75b3b4bed212c",
@@ -2436,7 +3186,13 @@
     "reddit_post_id": "1s4ro9z",
     "reddit_comment_id": "ocpmx84",
     "content_type": "comment",
-    "score": 2
+    "score": 2,
+    "sentiment": "positive",
+    "sentiment_score": 0.98,
+    "emotional_affinity_score": 88,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.93
   },
   {
     "record_id": "2494441f7a60787438e61753",
@@ -2456,7 +3212,13 @@
     "reddit_post_id": "1s4ro9z",
     "reddit_comment_id": "ocp8y4j",
     "content_type": "comment",
-    "score": 1
+    "score": 1,
+    "sentiment": "positive",
+    "sentiment_score": 0.89,
+    "emotional_affinity_score": 86,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.82
   },
   {
     "record_id": "aebe5245d37ac43cebfe13b1",
@@ -2476,7 +3238,13 @@
     "reddit_post_id": "1s4ro9z",
     "reddit_comment_id": "ocpfw89",
     "content_type": "comment",
-    "score": 0
+    "score": 0,
+    "sentiment": "negative",
+    "sentiment_score": 0.31,
+    "emotional_affinity_score": 38,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.38
   },
   {
     "record_id": "339a9ce737e5ec60b9758862",
@@ -2495,7 +3263,13 @@
     "subreddit": "PWHL",
     "reddit_post_id": "1s47skx",
     "content_type": "post",
-    "score": 56
+    "score": 56,
+    "sentiment": "positive",
+    "sentiment_score": 0.98,
+    "emotional_affinity_score": 54,
+    "behavioral_pathway": "loyalty_signal",
+    "priority_signal": "none",
+    "confidence_score": 0.75
   },
   {
     "record_id": "33d48fbf0d9b3d9e291d41b1",
@@ -2515,7 +3289,13 @@
     "reddit_post_id": "1s47skx",
     "reddit_comment_id": "ockzm2d",
     "content_type": "comment",
-    "score": 62
+    "score": 62,
+    "sentiment": "positive",
+    "sentiment_score": 0.97,
+    "emotional_affinity_score": 94,
+    "behavioral_pathway": "loyalty_signal",
+    "priority_signal": "none",
+    "confidence_score": 0.94
   },
   {
     "record_id": "f2b985aa1778c9040096c37d",
@@ -2535,7 +3315,13 @@
     "reddit_post_id": "1s47skx",
     "reddit_comment_id": "ockyf58",
     "content_type": "comment",
-    "score": 48
+    "score": 48,
+    "sentiment": "positive",
+    "sentiment_score": 0.98,
+    "emotional_affinity_score": 46,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.71
   },
   {
     "record_id": "165f5fc0c52dfe731ca76507",
@@ -2555,7 +3341,13 @@
     "reddit_post_id": "1s47skx",
     "reddit_comment_id": "ocl2z02",
     "content_type": "comment",
-    "score": 36
+    "score": 36,
+    "sentiment": "negative",
+    "sentiment_score": 0.09,
+    "emotional_affinity_score": 64,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.73
   },
   {
     "record_id": "c30f2b598a60f0c661f059b1",
@@ -2574,7 +3366,13 @@
     "subreddit": "PWHL",
     "reddit_post_id": "1s4i48k",
     "content_type": "post",
-    "score": 18
+    "score": 18,
+    "sentiment": "positive",
+    "sentiment_score": 0.81,
+    "emotional_affinity_score": 45,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.53
   },
   {
     "record_id": "2f901064c4d9c15bcf6b4b2e",
@@ -2594,7 +3392,13 @@
     "reddit_post_id": "1s4i48k",
     "reddit_comment_id": "ocn7dar",
     "content_type": "comment",
-    "score": 15
+    "score": 15,
+    "sentiment": "positive",
+    "sentiment_score": 0.77,
+    "emotional_affinity_score": 97,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.75
   },
   {
     "record_id": "4a1c91868287b59fd0dd68f3",
@@ -2614,7 +3418,13 @@
     "reddit_post_id": "1s4i48k",
     "reddit_comment_id": "ocnatvw",
     "content_type": "comment",
-    "score": 11
+    "score": 11,
+    "sentiment": "positive",
+    "sentiment_score": 0.96,
+    "emotional_affinity_score": 96,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.95
   },
   {
     "record_id": "0940b145edb74a347136762c",
@@ -2634,7 +3444,13 @@
     "reddit_post_id": "1s4i48k",
     "reddit_comment_id": "ocn5yaf",
     "content_type": "comment",
-    "score": 1
+    "score": 1,
+    "sentiment": "positive",
+    "sentiment_score": 0.89,
+    "emotional_affinity_score": 85,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.81
   },
   {
     "record_id": "fcea07583877111c60264f68",
@@ -2654,7 +3470,13 @@
     "reddit_post_id": "1s3yv98",
     "reddit_comment_id": "ocj7n37",
     "content_type": "comment",
-    "score": 73
+    "score": 73,
+    "sentiment": "positive",
+    "sentiment_score": 0.95,
+    "emotional_affinity_score": 98,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.94
   },
   {
     "record_id": "092cc36218bccb42f9cb4fe2",
@@ -2674,7 +3496,13 @@
     "reddit_post_id": "1s3yv98",
     "reddit_comment_id": "ocmmrvd",
     "content_type": "comment",
-    "score": 5
+    "score": 5,
+    "sentiment": "positive",
+    "sentiment_score": 0.91,
+    "emotional_affinity_score": 77,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.8
   },
   {
     "record_id": "dfd2cffaa727b43d973eab26",
@@ -2694,7 +3522,13 @@
     "reddit_post_id": "1s3yv98",
     "reddit_comment_id": "ocj4av4",
     "content_type": "comment",
-    "score": 1
+    "score": 1,
+    "sentiment": "positive",
+    "sentiment_score": 0.89,
+    "emotional_affinity_score": 84,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.81
   },
   {
     "record_id": "7f31298aedc030c32368087c",
@@ -2713,7 +3547,13 @@
     "subreddit": "PWHL",
     "reddit_post_id": "1s4j05i",
     "content_type": "post",
-    "score": 8
+    "score": 8,
+    "sentiment": "negative",
+    "sentiment_score": 0.19,
+    "emotional_affinity_score": 88,
+    "behavioral_pathway": "churn_risk",
+    "priority_signal": "none",
+    "confidence_score": 0.75
   },
   {
     "record_id": "e03ff7a48fb4a9416f068c28",
@@ -2733,7 +3573,13 @@
     "reddit_post_id": "1s4j05i",
     "reddit_comment_id": "ocnhs09",
     "content_type": "comment",
-    "score": 7
+    "score": 7,
+    "sentiment": "positive",
+    "sentiment_score": 0.68,
+    "emotional_affinity_score": 86,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.61
   },
   {
     "record_id": "121702579a5d8464bdde1065",
@@ -2753,7 +3599,13 @@
     "reddit_post_id": "1s4j05i",
     "reddit_comment_id": "ocnlwf0",
     "content_type": "comment",
-    "score": 7
+    "score": 7,
+    "sentiment": "positive",
+    "sentiment_score": 0.65,
+    "emotional_affinity_score": 93,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.62
   },
   {
     "record_id": "9237d274beacea44cf129cd0",
@@ -2773,7 +3625,13 @@
     "reddit_post_id": "1s4j05i",
     "reddit_comment_id": "ocnd1ke",
     "content_type": "comment",
-    "score": 1
+    "score": 1,
+    "sentiment": "positive",
+    "sentiment_score": 0.89,
+    "emotional_affinity_score": 80,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.79
   },
   {
     "record_id": "3de6e519a8efa601c66f560a",
@@ -2793,7 +3651,13 @@
     "reddit_post_id": "1s3vkyq",
     "reddit_comment_id": "ociitp4",
     "content_type": "comment",
-    "score": 113
+    "score": 113,
+    "sentiment": "positive",
+    "sentiment_score": 0.95,
+    "emotional_affinity_score": 56,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.73
   },
   {
     "record_id": "9363acc34fb931e610c9ce08",
@@ -2813,7 +3677,13 @@
     "reddit_post_id": "1s3vkyq",
     "reddit_comment_id": "ociirvc",
     "content_type": "comment",
-    "score": 31
+    "score": 31,
+    "sentiment": "negative",
+    "sentiment_score": 0.26,
+    "emotional_affinity_score": 52,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.5
   },
   {
     "record_id": "cea22a0490d3cf353c9d01b6",
@@ -2833,7 +3703,13 @@
     "reddit_post_id": "1s3vkyq",
     "reddit_comment_id": "ocirbrb",
     "content_type": "comment",
-    "score": 22
+    "score": 22,
+    "sentiment": "negative",
+    "sentiment_score": 0.27,
+    "emotional_affinity_score": 98,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.72
   },
   {
     "record_id": "d240d5bad9013bb105deb277",
@@ -2852,7 +3728,13 @@
     "subreddit": "PWHL",
     "reddit_post_id": "1s46w50",
     "content_type": "post",
-    "score": 10
+    "score": 10,
+    "sentiment": "positive",
+    "sentiment_score": 0.99,
+    "emotional_affinity_score": 56,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.77
   },
   {
     "record_id": "6967dceb3fa8f297c7422762",
@@ -2872,7 +3754,13 @@
     "reddit_post_id": "1s46w50",
     "reddit_comment_id": "oclma5p",
     "content_type": "comment",
-    "score": 13
+    "score": 13,
+    "sentiment": "positive",
+    "sentiment_score": 0.9,
+    "emotional_affinity_score": 78,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.79
   },
   {
     "record_id": "49db24ef6157702a58bcef1d",
@@ -2892,7 +3780,13 @@
     "reddit_post_id": "1s46w50",
     "reddit_comment_id": "ockrjgm",
     "content_type": "comment",
-    "score": 15
+    "score": 15,
+    "sentiment": "positive",
+    "sentiment_score": 0.94,
+    "emotional_affinity_score": 89,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.88
   },
   {
     "record_id": "948e1c106840d321dc4f28b2",
@@ -2912,7 +3806,13 @@
     "reddit_post_id": "1s46w50",
     "reddit_comment_id": "ockozhd",
     "content_type": "comment",
-    "score": 1
+    "score": 1,
+    "sentiment": "positive",
+    "sentiment_score": 0.89,
+    "emotional_affinity_score": 85,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.82
   },
   {
     "record_id": "9e69ee0fec46412412be4c8a",
@@ -2932,7 +3832,13 @@
     "reddit_post_id": "1s3x7ye",
     "reddit_comment_id": "ocit3tf",
     "content_type": "comment",
-    "score": 1
+    "score": 1,
+    "sentiment": "positive",
+    "sentiment_score": 0.89,
+    "emotional_affinity_score": 84,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.81
   },
   {
     "record_id": "2858d40e160cdd33f7782e91",
@@ -2951,7 +3857,13 @@
     "subreddit": "PWHL",
     "reddit_post_id": "1s3rk9t",
     "content_type": "post",
-    "score": 65
+    "score": 65,
+    "sentiment": "positive",
+    "sentiment_score": 0.92,
+    "emotional_affinity_score": 97,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.91
   },
   {
     "record_id": "a7e3b6dfcac4c4ccdfb87d91",
@@ -2971,7 +3883,13 @@
     "reddit_post_id": "1s3rk9t",
     "reddit_comment_id": "ochzg7c",
     "content_type": "comment",
-    "score": 13
+    "score": 13,
+    "sentiment": "positive",
+    "sentiment_score": 0.9,
+    "emotional_affinity_score": 87,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.83
   },
   {
     "record_id": "5cd4038206c4ab2d07bf3bce",
@@ -2991,7 +3909,13 @@
     "reddit_post_id": "1s3r8bl",
     "reddit_comment_id": "ocijqp7",
     "content_type": "comment",
-    "score": 15
+    "score": 15,
+    "sentiment": "negative",
+    "sentiment_score": 0.25,
+    "emotional_affinity_score": 50,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.51
   },
   {
     "record_id": "fcdd79e0f070e725c6f5a6be",
@@ -3010,7 +3934,13 @@
     "subreddit": "PWHL",
     "reddit_post_id": "1s3mmr1",
     "content_type": "post",
-    "score": 70
+    "score": 70,
+    "sentiment": "positive",
+    "sentiment_score": 0.99,
+    "emotional_affinity_score": 83,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.9
   },
   {
     "record_id": "22beb002e58c0d0999fa17db",
@@ -3030,7 +3960,13 @@
     "reddit_post_id": "1s3mmr1",
     "reddit_comment_id": "ocgmhyj",
     "content_type": "comment",
-    "score": 161
+    "score": 161,
+    "sentiment": "positive",
+    "sentiment_score": 0.84,
+    "emotional_affinity_score": 85,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.77
   },
   {
     "record_id": "34a73b8a8e3c67dfa1af362e",
@@ -3050,7 +3986,13 @@
     "reddit_post_id": "1s3mmr1",
     "reddit_comment_id": "och2etg",
     "content_type": "comment",
-    "score": 57
+    "score": 57,
+    "sentiment": "positive",
+    "sentiment_score": 0.99,
+    "emotional_affinity_score": 56,
+    "behavioral_pathway": "loyalty_signal",
+    "priority_signal": "none",
+    "confidence_score": 0.77
   },
   {
     "record_id": "8826f2a64892bdb1b70da50c",
@@ -3070,7 +4012,13 @@
     "reddit_post_id": "1s3mmr1",
     "reddit_comment_id": "ocgqk6u",
     "content_type": "comment",
-    "score": 14
+    "score": 14,
+    "sentiment": "positive",
+    "sentiment_score": 0.98,
+    "emotional_affinity_score": 57,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.77
   },
   {
     "record_id": "d7b9e0c85a9c4b49d1d40363",
@@ -3090,7 +4038,13 @@
     "reddit_post_id": "1s3mmr1",
     "reddit_comment_id": "ocgmx0w",
     "content_type": "comment",
-    "score": 8
+    "score": 8,
+    "sentiment": "positive",
+    "sentiment_score": 0.99,
+    "emotional_affinity_score": 92,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.95
   },
   {
     "record_id": "93408bba8bf8393a942edc31",
@@ -3110,7 +4064,13 @@
     "reddit_post_id": "1s3mmr1",
     "reddit_comment_id": "ocgw90z",
     "content_type": "comment",
-    "score": 8
+    "score": 8,
+    "sentiment": "positive",
+    "sentiment_score": 0.81,
+    "emotional_affinity_score": 87,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.75
   },
   {
     "record_id": "363a60e1ccb574d4fe16a674",
@@ -3130,7 +4090,13 @@
     "reddit_post_id": "1s3fbf5",
     "reddit_comment_id": "ocf0cnb",
     "content_type": "comment",
-    "score": 1
+    "score": 1,
+    "sentiment": "positive",
+    "sentiment_score": 0.89,
+    "emotional_affinity_score": 85,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.81
   },
   {
     "record_id": "8a0121f1c87b9c7ed27387ad",
@@ -3150,7 +4116,13 @@
     "reddit_post_id": "1s3cndy",
     "reddit_comment_id": "ocei0dz",
     "content_type": "comment",
-    "score": 22
+    "score": 22,
+    "sentiment": "negative",
+    "sentiment_score": 0.19,
+    "emotional_affinity_score": 56,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.59
   },
   {
     "record_id": "bc9a2ec2362f6f8bbb451d54",
@@ -3170,7 +4142,13 @@
     "reddit_post_id": "1s3cndy",
     "reddit_comment_id": "ocj495f",
     "content_type": "comment",
-    "score": 2
+    "score": 2,
+    "sentiment": "negative",
+    "sentiment_score": 0.11,
+    "emotional_affinity_score": 50,
+    "behavioral_pathway": "churn_risk",
+    "priority_signal": "none",
+    "confidence_score": 0.64
   },
   {
     "record_id": "950b6d01206222f74a335307",
@@ -3190,7 +4168,13 @@
     "reddit_post_id": "1s3cndy",
     "reddit_comment_id": "ocl3pch",
     "content_type": "comment",
-    "score": 2
+    "score": 2,
+    "sentiment": "positive",
+    "sentiment_score": 0.95,
+    "emotional_affinity_score": 76,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.83
   },
   {
     "record_id": "b955bd6b0ec4f5809e94c33b",
@@ -3210,7 +4194,13 @@
     "reddit_post_id": "1s3cndy",
     "reddit_comment_id": "ocefaf0",
     "content_type": "comment",
-    "score": 1
+    "score": 1,
+    "sentiment": "positive",
+    "sentiment_score": 0.89,
+    "emotional_affinity_score": 85,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.81
   },
   {
     "record_id": "4c3fe95232086e12db87df8e",
@@ -3230,7 +4220,13 @@
     "reddit_post_id": "d3p22l",
     "content_type": "post",
     "score": 11798,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.99,
+    "emotional_affinity_score": 90,
+    "behavioral_pathway": "churn_risk",
+    "priority_signal": "identity_anchor",
+    "confidence_score": 0.94
   },
   {
     "record_id": "9741f32f2bb37e71f58717da",
@@ -3251,7 +4247,13 @@
     "reddit_comment_id": "co6hp8i",
     "content_type": "comment",
     "score": 23,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.9,
+    "emotional_affinity_score": 65,
+    "behavioral_pathway": "churn_risk",
+    "priority_signal": "none",
+    "confidence_score": 0.73
   },
   {
     "record_id": "241d0f28625a24b8185e1b99",
@@ -3271,7 +4273,13 @@
     "reddit_post_id": "hvvoms",
     "content_type": "post",
     "score": 1628,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.91,
+    "emotional_affinity_score": 56,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.69
   },
   {
     "record_id": "62acbd47329a521daa26532d",
@@ -3291,7 +4299,13 @@
     "reddit_post_id": "8qd3f0",
     "content_type": "post",
     "score": 1669,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.99,
+    "emotional_affinity_score": 85,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.92
   },
   {
     "record_id": "d494d622147f1127fc375d9c",
@@ -3311,7 +4325,13 @@
     "reddit_post_id": "bui56c",
     "content_type": "post",
     "score": 2048,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.93,
+    "emotional_affinity_score": 72,
+    "behavioral_pathway": "churn_risk",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.79
   },
   {
     "record_id": "b77dacb777ee6465e8a2d87e",
@@ -3331,7 +4351,13 @@
     "reddit_post_id": "o91c8c",
     "content_type": "post",
     "score": 1131,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "negative",
+    "sentiment_score": 0.03,
+    "emotional_affinity_score": 40,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.67
   },
   {
     "record_id": "3265a78c66615dd745792a56",
@@ -3351,7 +4377,13 @@
     "reddit_post_id": "aot2ga",
     "content_type": "post",
     "score": 1825,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "positive",
+    "sentiment_score": 1.0,
+    "emotional_affinity_score": 93,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.96
   },
   {
     "record_id": "efc3712379a85dbda43f99f7",
@@ -3372,7 +4404,13 @@
     "reddit_comment_id": "d4uosnl",
     "content_type": "comment",
     "score": 226,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.91,
+    "emotional_affinity_score": 62,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.72
   },
   {
     "record_id": "bc9d0072c3c8e84faa24f59e",
@@ -3393,7 +4431,13 @@
     "reddit_comment_id": "eo1o9gw",
     "content_type": "comment",
     "score": 8,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "negative",
+    "sentiment_score": 0.18,
+    "emotional_affinity_score": 56,
+    "behavioral_pathway": "none",
+    "priority_signal": "identity_anchor",
+    "confidence_score": 0.6
   },
   {
     "record_id": "637d6efc3b88e5e6ed55643a",
@@ -3413,7 +4457,13 @@
     "reddit_post_id": "jkwxvs",
     "content_type": "post",
     "score": 24,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "positive",
+    "sentiment_score": 1.0,
+    "emotional_affinity_score": 83,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.92
   },
   {
     "record_id": "58c76d2d82b00498a4b89767",
@@ -3433,7 +4483,13 @@
     "reddit_post_id": "1riwxt6",
     "content_type": "post",
     "score": 9973,
-    "search_query": "women fans"
+    "search_query": "women fans",
+    "sentiment": "positive",
+    "sentiment_score": 1.0,
+    "emotional_affinity_score": 46,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.73
   },
   {
     "record_id": "c207541bd917be1b27b5e4b5",
@@ -3453,7 +4509,13 @@
     "reddit_post_id": "1rwcoro",
     "content_type": "post",
     "score": 2106,
-    "search_query": "women fans"
+    "search_query": "women fans",
+    "sentiment": "positive",
+    "sentiment_score": 0.77,
+    "emotional_affinity_score": 58,
+    "behavioral_pathway": "purchase_intent",
+    "priority_signal": "none",
+    "confidence_score": 0.56
   },
   {
     "record_id": "cd335d0f0616524e4c2b8472",
@@ -3473,7 +4535,13 @@
     "reddit_post_id": "16ved8x",
     "content_type": "post",
     "score": 11325,
-    "search_query": "women fans"
+    "search_query": "women fans",
+    "sentiment": "negative",
+    "sentiment_score": 0.04,
+    "emotional_affinity_score": 98,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.95
   },
   {
     "record_id": "dad7dd158472fc94f68a293a",
@@ -3493,7 +4561,13 @@
     "reddit_post_id": "vtfxx7",
     "content_type": "post",
     "score": 6030,
-    "search_query": "women fans"
+    "search_query": "women fans",
+    "sentiment": "negative",
+    "sentiment_score": 0.09,
+    "emotional_affinity_score": 54,
+    "behavioral_pathway": "churn_risk",
+    "priority_signal": "none",
+    "confidence_score": 0.68
   },
   {
     "record_id": "874ae2c691651cdf70eae8e0",
@@ -3513,7 +4587,13 @@
     "reddit_post_id": "vkg318",
     "content_type": "post",
     "score": 11512,
-    "search_query": "women fans"
+    "search_query": "women fans",
+    "sentiment": "positive",
+    "sentiment_score": 0.83,
+    "emotional_affinity_score": 81,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.73
   },
   {
     "record_id": "34daaf5eed34b61a8b05116a",
@@ -3533,7 +4613,13 @@
     "reddit_post_id": "r14oxt",
     "content_type": "post",
     "score": 12643,
-    "search_query": "women fans"
+    "search_query": "women fans",
+    "sentiment": "positive",
+    "sentiment_score": 0.99,
+    "emotional_affinity_score": 49,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.73
   },
   {
     "record_id": "5ce1e1faf5652bf9f7f76dfd",
@@ -3553,7 +4639,13 @@
     "reddit_post_id": "knw1d0",
     "content_type": "post",
     "score": 14470,
-    "search_query": "women fans"
+    "search_query": "women fans",
+    "sentiment": "positive",
+    "sentiment_score": 0.92,
+    "emotional_affinity_score": 62,
+    "behavioral_pathway": "churn_risk",
+    "priority_signal": "none",
+    "confidence_score": 0.73
   },
   {
     "record_id": "01188181703c3579700263e3",
@@ -3573,7 +4665,13 @@
     "reddit_post_id": "1597ovz",
     "content_type": "post",
     "score": 4936,
-    "search_query": "women fans"
+    "search_query": "women fans",
+    "sentiment": "positive",
+    "sentiment_score": 0.99,
+    "emotional_affinity_score": 86,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.92
   },
   {
     "record_id": "f807820729787427e97bfd48",
@@ -3593,7 +4691,13 @@
     "reddit_post_id": "qmll7j",
     "content_type": "post",
     "score": 10245,
-    "search_query": "women fans"
+    "search_query": "women fans",
+    "sentiment": "positive",
+    "sentiment_score": 0.99,
+    "emotional_affinity_score": 39,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.69
   },
   {
     "record_id": "758d0ea4727a2d21537859e6",
@@ -3613,7 +4717,13 @@
     "reddit_post_id": "qj2n1o",
     "content_type": "post",
     "score": 6494,
-    "search_query": "women fans"
+    "search_query": "women fans",
+    "sentiment": "positive",
+    "sentiment_score": 0.88,
+    "emotional_affinity_score": 69,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.72
   },
   {
     "record_id": "8c80885c42133ecda8190a4c",
@@ -3633,7 +4743,13 @@
     "reddit_post_id": "wjvaiu",
     "content_type": "post",
     "score": 2750,
-    "search_query": "women fans"
+    "search_query": "women fans",
+    "sentiment": "positive",
+    "sentiment_score": 1.0,
+    "emotional_affinity_score": 49,
+    "behavioral_pathway": "purchase_intent",
+    "priority_signal": "none",
+    "confidence_score": 0.74
   },
   {
     "record_id": "6716e3b17eaedba595117285",
@@ -3654,7 +4770,13 @@
     "reddit_comment_id": "ijjuzwg",
     "content_type": "comment",
     "score": 219,
-    "search_query": "women fans"
+    "search_query": "women fans",
+    "sentiment": "positive",
+    "sentiment_score": 0.97,
+    "emotional_affinity_score": 53,
+    "behavioral_pathway": "purchase_intent",
+    "priority_signal": "none",
+    "confidence_score": 0.73
   },
   {
     "record_id": "c5c6b568bdddb86b27083b2d",
@@ -3674,7 +4796,13 @@
     "reddit_post_id": "c2p5vg",
     "content_type": "post",
     "score": 7901,
-    "search_query": "women fans"
+    "search_query": "women fans",
+    "sentiment": "negative",
+    "sentiment_score": 0.15,
+    "emotional_affinity_score": 58,
+    "behavioral_pathway": "churn_risk",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.64
   },
   {
     "record_id": "9f9d4ace2b97d6aff8ccd44a",
@@ -3694,7 +4822,13 @@
     "reddit_post_id": "fib11i",
     "content_type": "post",
     "score": 651,
-    "search_query": "women fans"
+    "search_query": "women fans",
+    "sentiment": "negative",
+    "sentiment_score": 0.29,
+    "emotional_affinity_score": 48,
+    "behavioral_pathway": "none",
+    "priority_signal": "trust_split",
+    "confidence_score": 0.45
   },
   {
     "record_id": "84e9277655d41e4219e90842",
@@ -3714,7 +4848,13 @@
     "reddit_post_id": "obtzot",
     "content_type": "post",
     "score": 4417,
-    "search_query": "women fans"
+    "search_query": "women fans",
+    "sentiment": "negative",
+    "sentiment_score": 0.0,
+    "emotional_affinity_score": 46,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.72
   },
   {
     "record_id": "e017b6279360fe34517f1f15",
@@ -3734,7 +4874,13 @@
     "reddit_post_id": "pzw0sq",
     "content_type": "post",
     "score": 3222,
-    "search_query": "women fans"
+    "search_query": "women fans",
+    "sentiment": "neutral",
+    "sentiment_score": 0.5,
+    "emotional_affinity_score": 60,
+    "behavioral_pathway": "purchase_intent",
+    "priority_signal": "none",
+    "confidence_score": 0.3
   },
   {
     "record_id": "371660476bae9d5065ca571a",
@@ -3754,7 +4900,13 @@
     "reddit_post_id": "jasnqb",
     "content_type": "post",
     "score": 4692,
-    "search_query": "women fans"
+    "search_query": "women fans",
+    "sentiment": "positive",
+    "sentiment_score": 0.98,
+    "emotional_affinity_score": 82,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.89
   },
   {
     "record_id": "671a280b86702f6d23710545",
@@ -3774,7 +4926,13 @@
     "reddit_post_id": "7185or",
     "content_type": "post",
     "score": 4455,
-    "search_query": "women fans"
+    "search_query": "women fans",
+    "sentiment": "positive",
+    "sentiment_score": 0.98,
+    "emotional_affinity_score": 95,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.95
   },
   {
     "record_id": "321a2a21a0d16fd88ce22a84",
@@ -3794,7 +4952,13 @@
     "reddit_post_id": "rw0m91",
     "content_type": "post",
     "score": 2254,
-    "search_query": "women fans"
+    "search_query": "women fans",
+    "sentiment": "positive",
+    "sentiment_score": 0.85,
+    "emotional_affinity_score": 93,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.81
   },
   {
     "record_id": "d5cff4143ea2f015564330ed",
@@ -3814,7 +4978,13 @@
     "reddit_post_id": "1ddkjrh",
     "content_type": "post",
     "score": 999,
-    "search_query": "women fans"
+    "search_query": "women fans",
+    "sentiment": "positive",
+    "sentiment_score": 1.0,
+    "emotional_affinity_score": 45,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.72
   },
   {
     "record_id": "4b2bf0afa4ce6daffe2c54d9",
@@ -3834,7 +5004,13 @@
     "reddit_post_id": "hhv65i",
     "content_type": "post",
     "score": 1722,
-    "search_query": "women fans"
+    "search_query": "women fans",
+    "sentiment": "positive",
+    "sentiment_score": 0.92,
+    "emotional_affinity_score": 42,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.63
   },
   {
     "record_id": "d6c52dc1ead89834b4c22f41",
@@ -3854,7 +5030,13 @@
     "reddit_post_id": "6p4bc0",
     "content_type": "post",
     "score": 2027,
-    "search_query": "women fans"
+    "search_query": "women fans",
+    "sentiment": "negative",
+    "sentiment_score": 0.29,
+    "emotional_affinity_score": 87,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.65
   },
   {
     "record_id": "6e5d60093cf9db5243b90805",
@@ -3874,7 +5056,13 @@
     "reddit_post_id": "1s0us6k",
     "content_type": "post",
     "score": 12074,
-    "search_query": "as a woman fan"
+    "search_query": "as a woman fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.88,
+    "emotional_affinity_score": 91,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.84
   },
   {
     "record_id": "d747d75171c283382b91ffea",
@@ -3894,7 +5082,13 @@
     "reddit_post_id": "1hpg3mg",
     "content_type": "post",
     "score": 2502,
-    "search_query": "as a woman fan"
+    "search_query": "as a woman fan",
+    "sentiment": "negative",
+    "sentiment_score": 0.01,
+    "emotional_affinity_score": 62,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.81
   },
   {
     "record_id": "ced20add6058d4b8a56cf20f",
@@ -3914,7 +5108,13 @@
     "reddit_post_id": "1o3dbud",
     "content_type": "post",
     "score": 1556,
-    "search_query": "as a woman fan"
+    "search_query": "as a woman fan",
+    "sentiment": "negative",
+    "sentiment_score": 0.01,
+    "emotional_affinity_score": 47,
+    "behavioral_pathway": "churn_risk",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.73
   },
   {
     "record_id": "90c383a329e5dc7c37a3a044",
@@ -3934,7 +5134,13 @@
     "reddit_post_id": "n36l05",
     "content_type": "post",
     "score": 2699,
-    "search_query": "as a woman fan"
+    "search_query": "as a woman fan",
+    "sentiment": "negative",
+    "sentiment_score": 0.05,
+    "emotional_affinity_score": 42,
+    "behavioral_pathway": "disengagement_marker",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.66
   },
   {
     "record_id": "49b152d7142efc6e89135ff6",
@@ -3954,7 +5160,13 @@
     "reddit_post_id": "3b805m",
     "content_type": "post",
     "score": 1191,
-    "search_query": "as a woman fan"
+    "search_query": "as a woman fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.99,
+    "emotional_affinity_score": 51,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.74
   },
   {
     "record_id": "3f2ee2b7c812ffd6a7ab0ac2",
@@ -3975,7 +5187,13 @@
     "reddit_comment_id": "ctkf6at",
     "content_type": "comment",
     "score": 64,
-    "search_query": "as a woman fan"
+    "search_query": "as a woman fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.68,
+    "emotional_affinity_score": 80,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.58
   },
   {
     "record_id": "38ed54f57cb1082b32154e5b",
@@ -3995,7 +5213,13 @@
     "reddit_post_id": "4xlbjo",
     "content_type": "post",
     "score": 1088,
-    "search_query": "as a woman fan"
+    "search_query": "as a woman fan",
+    "sentiment": "positive",
+    "sentiment_score": 1.0,
+    "emotional_affinity_score": 77,
+    "behavioral_pathway": "none",
+    "priority_signal": "identity_anchor",
+    "confidence_score": 0.88
   },
   {
     "record_id": "969c055b2a988dd9dd2a2722",
@@ -4015,7 +5239,13 @@
     "reddit_post_id": "9etdfv",
     "content_type": "post",
     "score": 960,
-    "search_query": "as a woman fan"
+    "search_query": "as a woman fan",
+    "sentiment": "positive",
+    "sentiment_score": 1.0,
+    "emotional_affinity_score": 57,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.78
   },
   {
     "record_id": "65cef8cc78122de4f6061525",
@@ -4035,7 +5265,13 @@
     "reddit_post_id": "2hgf7k",
     "content_type": "post",
     "score": 326,
-    "search_query": "as a woman fan"
+    "search_query": "as a woman fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.99,
+    "emotional_affinity_score": 65,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.82
   },
   {
     "record_id": "b8fe3608a4fbc88c8f79d15a",
@@ -4055,7 +5291,13 @@
     "reddit_post_id": "a0jo13",
     "content_type": "post",
     "score": 553,
-    "search_query": "as a woman fan"
+    "search_query": "as a woman fan",
+    "sentiment": "positive",
+    "sentiment_score": 1.0,
+    "emotional_affinity_score": 48,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.74
   },
   {
     "record_id": "2d55274b1f3c8a50b88c120e",
@@ -4075,7 +5317,13 @@
     "reddit_post_id": "44axcy",
     "content_type": "post",
     "score": 10864,
-    "search_query": "girl fan"
+    "search_query": "girl fan",
+    "sentiment": "positive",
+    "sentiment_score": 1.0,
+    "emotional_affinity_score": 69,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.84
   },
   {
     "record_id": "5ed28ab9189558b182cd2579",
@@ -4095,7 +5343,13 @@
     "reddit_post_id": "c2hkc7",
     "content_type": "post",
     "score": 1795,
-    "search_query": "girl fan"
+    "search_query": "girl fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.99,
+    "emotional_affinity_score": 48,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.73
   },
   {
     "record_id": "377985fbefe8d00666432b07",
@@ -4115,7 +5369,13 @@
     "reddit_post_id": "1k63ssk",
     "content_type": "post",
     "score": 2989,
-    "search_query": "girl fan"
+    "search_query": "girl fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.96,
+    "emotional_affinity_score": 95,
+    "behavioral_pathway": "loyalty_signal",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.94
   },
   {
     "record_id": "5a583d7ccbe078c3d1c77021",
@@ -4135,7 +5395,13 @@
     "reddit_post_id": "ubdlhf",
     "content_type": "post",
     "score": 7841,
-    "search_query": "girl fan"
+    "search_query": "girl fan",
+    "sentiment": "negative",
+    "sentiment_score": 0.17,
+    "emotional_affinity_score": 31,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.48
   },
   {
     "record_id": "ae4581170c521719d965d6cc",
@@ -4156,7 +5422,13 @@
     "reddit_comment_id": "dvdze8p",
     "content_type": "comment",
     "score": 116,
-    "search_query": "girl fan"
+    "search_query": "girl fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.97,
+    "emotional_affinity_score": 49,
+    "behavioral_pathway": "churn_risk",
+    "priority_signal": "none",
+    "confidence_score": 0.71
   },
   {
     "record_id": "11fcd5ff2d1887e4548159fe",
@@ -4176,7 +5448,13 @@
     "reddit_post_id": "ipuofk",
     "content_type": "post",
     "score": 451,
-    "search_query": "girl fan"
+    "search_query": "girl fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.66,
+    "emotional_affinity_score": 67,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.49
   },
   {
     "record_id": "3325a8e68ae3e069aca92cbd",
@@ -4196,7 +5474,13 @@
     "reddit_post_id": "ijfk2z",
     "content_type": "post",
     "score": 3243,
-    "search_query": "girl fan"
+    "search_query": "girl fan",
+    "sentiment": "negative",
+    "sentiment_score": 0.09,
+    "emotional_affinity_score": 64,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.73
   },
   {
     "record_id": "ad4618eaef9d47283021d2ec",
@@ -4216,7 +5500,13 @@
     "reddit_post_id": "bsc87g",
     "content_type": "post",
     "score": 3107,
-    "search_query": "girl fan"
+    "search_query": "girl fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.98,
+    "emotional_affinity_score": 92,
+    "behavioral_pathway": "purchase_intent",
+    "priority_signal": "none",
+    "confidence_score": 0.94
   },
   {
     "record_id": "ffb65f6f14066cdc2ee304e3",
@@ -4237,7 +5527,13 @@
     "reddit_comment_id": "m4vmasu",
     "content_type": "comment",
     "score": 408,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "negative",
+    "sentiment_score": 0.18,
+    "emotional_affinity_score": 72,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.68
   },
   {
     "record_id": "a435c291bb4533c337601c82",
@@ -4258,7 +5554,13 @@
     "reddit_comment_id": "e277te2",
     "content_type": "comment",
     "score": 73,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "negative",
+    "sentiment_score": 0.47,
+    "emotional_affinity_score": 46,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.26
   },
   {
     "record_id": "01ad108c809802e37a40cb87",
@@ -4278,7 +5580,13 @@
     "reddit_post_id": "8x0xq6",
     "content_type": "post",
     "score": 3260,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "positive",
+    "sentiment_score": 1.0,
+    "emotional_affinity_score": 59,
+    "behavioral_pathway": "identity_attachment",
+    "priority_signal": "none",
+    "confidence_score": 0.79
   },
   {
     "record_id": "aec05b3d14761c9e462663c9",
@@ -4299,7 +5607,13 @@
     "reddit_comment_id": "kp8deis",
     "content_type": "comment",
     "score": 15,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.67,
+    "emotional_affinity_score": 89,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.62
   },
   {
     "record_id": "a3ab59d2e800ba792074b8c9",
@@ -4320,7 +5634,13 @@
     "reddit_comment_id": "gxu25qi",
     "content_type": "comment",
     "score": -34,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "negative",
+    "sentiment_score": 0.02,
+    "emotional_affinity_score": 48,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.72
   },
   {
     "record_id": "a627732a8e42ee7a4bf43991",
@@ -4340,7 +5660,13 @@
     "reddit_post_id": "hat752",
     "content_type": "post",
     "score": 1896,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "positive",
+    "sentiment_score": 1.0,
+    "emotional_affinity_score": 54,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.76
   },
   {
     "record_id": "cfc424a039d4869d4124f177",
@@ -4360,7 +5686,13 @@
     "reddit_post_id": "mupsvr",
     "content_type": "post",
     "score": 1724,
-    "search_query": "as a woman fan"
+    "search_query": "as a woman fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.99,
+    "emotional_affinity_score": 87,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.93
   },
   {
     "record_id": "d159fe3df2f9b4aaf57c54d9",
@@ -4380,7 +5712,13 @@
     "reddit_post_id": "920zgd",
     "content_type": "post",
     "score": 615,
-    "search_query": "as a woman fan"
+    "search_query": "as a woman fan",
+    "sentiment": "negative",
+    "sentiment_score": 0.2,
+    "emotional_affinity_score": 91,
+    "behavioral_pathway": "churn_risk",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.76
   },
   {
     "record_id": "d8635d7e1859b40bc4ee032b",
@@ -4400,7 +5738,13 @@
     "reddit_post_id": "s3doy",
     "content_type": "post",
     "score": 110,
-    "search_query": "as a woman fan"
+    "search_query": "as a woman fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.9,
+    "emotional_affinity_score": 69,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.74
   },
   {
     "record_id": "6b7ce392acde9f928ed55863",
@@ -4420,7 +5764,13 @@
     "reddit_post_id": "hpbnlv",
     "content_type": "post",
     "score": 163,
-    "search_query": "as a woman fan"
+    "search_query": "as a woman fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.99,
+    "emotional_affinity_score": 62,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.8
   },
   {
     "record_id": "b55b6c98605c16eb11968ea1",
@@ -4440,7 +5790,13 @@
     "reddit_post_id": "1s41fo",
     "content_type": "post",
     "score": 83,
-    "search_query": "as a woman fan"
+    "search_query": "as a woman fan",
+    "sentiment": "negative",
+    "sentiment_score": 0.15,
+    "emotional_affinity_score": 48,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.59
   },
   {
     "record_id": "58f4328c155e7a3208fa44ff",
@@ -4460,7 +5816,13 @@
     "reddit_post_id": "fj06pi",
     "content_type": "post",
     "score": 182,
-    "search_query": "as a woman fan"
+    "search_query": "as a woman fan",
+    "sentiment": "positive",
+    "sentiment_score": 1.0,
+    "emotional_affinity_score": 54,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.77
   },
   {
     "record_id": "da70c1cb82bcbd74670421c0",
@@ -4480,7 +5842,13 @@
     "reddit_post_id": "ctwbe3",
     "content_type": "post",
     "score": 1370,
-    "search_query": "girl fan"
+    "search_query": "girl fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.99,
+    "emotional_affinity_score": 27,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.62
   },
   {
     "record_id": "7f4233a8194d13d0a37d2f9f",
@@ -4500,7 +5868,13 @@
     "reddit_post_id": "63f5g4",
     "content_type": "post",
     "score": 17,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "positive",
+    "sentiment_score": 1.0,
+    "emotional_affinity_score": 55,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.77
   },
   {
     "record_id": "e542a9f31567f1f9081ee8d5",
@@ -4520,7 +5894,13 @@
     "reddit_post_id": "1jhj4nh",
     "content_type": "post",
     "score": 453,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.97,
+    "emotional_affinity_score": 36,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.65
   },
   {
     "record_id": "a870b08a573c3614149b5281",
@@ -4540,7 +5920,13 @@
     "reddit_post_id": "sfemcu",
     "content_type": "post",
     "score": 222,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.96,
+    "emotional_affinity_score": 92,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.92
   },
   {
     "record_id": "d91d58539eb349254d2756d2",
@@ -4560,7 +5946,13 @@
     "reddit_post_id": "6jr7yn",
     "content_type": "post",
     "score": 185,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.99,
+    "emotional_affinity_score": 34,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.66
   },
   {
     "record_id": "486e71f604c61c7a06b00bbd",
@@ -4580,7 +5972,13 @@
     "reddit_post_id": "1f5foca",
     "content_type": "post",
     "score": 38,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.99,
+    "emotional_affinity_score": 52,
+    "behavioral_pathway": "churn_risk",
+    "priority_signal": "none",
+    "confidence_score": 0.75
   },
   {
     "record_id": "14ad720fde303081ad952b04",
@@ -4600,7 +5998,13 @@
     "reddit_post_id": "tkks2u",
     "content_type": "post",
     "score": 149,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "positive",
+    "sentiment_score": 1.0,
+    "emotional_affinity_score": 81,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.9
   },
   {
     "record_id": "e2cd6f93220f17d61bbf4094",
@@ -4620,7 +6024,13 @@
     "reddit_post_id": "v4peqe",
     "content_type": "post",
     "score": 8,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.97,
+    "emotional_affinity_score": 73,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.84
   },
   {
     "record_id": "583ef38fd39f00be47e66256",
@@ -4640,7 +6050,13 @@
     "reddit_post_id": "1lhnd4m",
     "content_type": "post",
     "score": 3449,
-    "search_query": "women fans"
+    "search_query": "women fans",
+    "sentiment": "positive",
+    "sentiment_score": 0.99,
+    "emotional_affinity_score": 47,
+    "behavioral_pathway": "churn_risk",
+    "priority_signal": "none",
+    "confidence_score": 0.72
   },
   {
     "record_id": "1200437cff9e6a11af98d58c",
@@ -4660,7 +6076,13 @@
     "reddit_post_id": "j97s1h",
     "content_type": "post",
     "score": 6983,
-    "search_query": "women fans"
+    "search_query": "women fans",
+    "sentiment": "positive",
+    "sentiment_score": 0.89,
+    "emotional_affinity_score": 82,
+    "behavioral_pathway": "churn_risk",
+    "priority_signal": "none",
+    "confidence_score": 0.81
   },
   {
     "record_id": "75e419fd7f7bd64b9190cfee",
@@ -4680,7 +6102,13 @@
     "reddit_post_id": "1jkmykx",
     "content_type": "post",
     "score": 1282,
-    "search_query": "women fans"
+    "search_query": "women fans",
+    "sentiment": "positive",
+    "sentiment_score": 0.86,
+    "emotional_affinity_score": 76,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.73
   },
   {
     "record_id": "e9f9b424c00c141a5ddcec23",
@@ -4700,7 +6128,13 @@
     "reddit_post_id": "sp1s0f",
     "content_type": "post",
     "score": 1386,
-    "search_query": "women fans"
+    "search_query": "women fans",
+    "sentiment": "negative",
+    "sentiment_score": 0.12,
+    "emotional_affinity_score": 89,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.82
   },
   {
     "record_id": "4ebe0eb4d1da41d4cf16640b",
@@ -4720,7 +6154,13 @@
     "reddit_post_id": "pitiyy",
     "content_type": "post",
     "score": 151,
-    "search_query": "women fans"
+    "search_query": "women fans",
+    "sentiment": "positive",
+    "sentiment_score": 0.64,
+    "emotional_affinity_score": 89,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.59
   },
   {
     "record_id": "cca32190119d9016d0a84914",
@@ -4740,7 +6180,13 @@
     "reddit_post_id": "1j4mmj2",
     "content_type": "post",
     "score": 281,
-    "search_query": "as a woman fan"
+    "search_query": "as a woman fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.58,
+    "emotional_affinity_score": 35,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.25
   },
   {
     "record_id": "66257c047f08dac9d864d28a",
@@ -4760,7 +6206,13 @@
     "reddit_post_id": "g8xyb4",
     "content_type": "post",
     "score": 15,
-    "search_query": "as a woman fan"
+    "search_query": "as a woman fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.97,
+    "emotional_affinity_score": 87,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.9
   },
   {
     "record_id": "4ea98805457203ca6dfdb753",
@@ -4780,7 +6232,13 @@
     "reddit_post_id": "jdecgr",
     "content_type": "post",
     "score": 3,
-    "search_query": "as a woman fan"
+    "search_query": "as a woman fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.96,
+    "emotional_affinity_score": 70,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.81
   },
   {
     "record_id": "3c0ea2cb2e2cb13c246000f1",
@@ -4800,7 +6258,13 @@
     "reddit_post_id": "1s4sy58",
     "content_type": "post",
     "score": 8,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.95,
+    "emotional_affinity_score": 46,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.68
   },
   {
     "record_id": "5996d985f68a9268976f8b58",
@@ -4820,7 +6284,13 @@
     "reddit_post_id": "98bs6i",
     "content_type": "post",
     "score": 472,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.83,
+    "emotional_affinity_score": 57,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.61
   },
   {
     "record_id": "2fd456ada16f9b4f95d6c020",
@@ -4841,7 +6311,13 @@
     "reddit_comment_id": "c9bnl2r",
     "content_type": "comment",
     "score": 40,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.9,
+    "emotional_affinity_score": 88,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.84
   },
   {
     "record_id": "b354c17fcaa4da7a6eed3f84",
@@ -4862,7 +6338,13 @@
     "reddit_comment_id": "cj3itef",
     "content_type": "comment",
     "score": 19,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.93,
+    "emotional_affinity_score": 77,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.82
   },
   {
     "record_id": "489f86669a8e3723eb1e6a6f",
@@ -4882,7 +6364,13 @@
     "reddit_post_id": "qu6ai1",
     "content_type": "post",
     "score": 873,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.99,
+    "emotional_affinity_score": 74,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.86
   },
   {
     "record_id": "16f5e5e7067668920e5c7d2b",
@@ -4902,7 +6390,13 @@
     "reddit_post_id": "k9fwv1",
     "content_type": "post",
     "score": 215,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.88,
+    "emotional_affinity_score": 81,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.78
   },
   {
     "record_id": "fe1bbb9805818fffe5b980aa",
@@ -4923,7 +6417,13 @@
     "reddit_comment_id": "gf3y0yx",
     "content_type": "comment",
     "score": 267,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.87,
+    "emotional_affinity_score": 90,
+    "behavioral_pathway": "none",
+    "priority_signal": "identity_anchor",
+    "confidence_score": 0.82
   },
   {
     "record_id": "c620ab8dbe97cf263889efe3",
@@ -4944,7 +6444,13 @@
     "reddit_comment_id": "e6l7knz",
     "content_type": "comment",
     "score": 569,
-    "search_query": "women fans"
+    "search_query": "women fans",
+    "sentiment": "positive",
+    "sentiment_score": 0.98,
+    "emotional_affinity_score": 77,
+    "behavioral_pathway": "loyalty_signal",
+    "priority_signal": "trust_split",
+    "confidence_score": 0.86
   },
   {
     "record_id": "da6f01c7f45c4af5ac2e9fcf",
@@ -4964,7 +6470,13 @@
     "reddit_post_id": "1kybbva",
     "content_type": "post",
     "score": 548,
-    "search_query": "women fans"
+    "search_query": "women fans",
+    "sentiment": "positive",
+    "sentiment_score": 0.99,
+    "emotional_affinity_score": 89,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.93
   },
   {
     "record_id": "e9a394270bef968622b5e28d",
@@ -4985,7 +6497,13 @@
     "reddit_comment_id": "lf1jdo2",
     "content_type": "comment",
     "score": 152,
-    "search_query": "women fans"
+    "search_query": "women fans",
+    "sentiment": "positive",
+    "sentiment_score": 0.55,
+    "emotional_affinity_score": 32,
+    "behavioral_pathway": "churn_risk",
+    "priority_signal": "trust_split",
+    "confidence_score": 0.21
   },
   {
     "record_id": "14abf7e636eb8dfec740ef26",
@@ -5005,7 +6523,13 @@
     "reddit_post_id": "kbx7xb",
     "content_type": "post",
     "score": 1158,
-    "search_query": "women fans"
+    "search_query": "women fans",
+    "sentiment": "positive",
+    "sentiment_score": 0.99,
+    "emotional_affinity_score": 67,
+    "behavioral_pathway": "churn_risk",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.82
   },
   {
     "record_id": "ed42e82d2a03dc145308993a",
@@ -5025,7 +6549,13 @@
     "reddit_post_id": "1jnxa2y",
     "content_type": "post",
     "score": 512,
-    "search_query": "as a woman fan"
+    "search_query": "as a woman fan",
+    "sentiment": "negative",
+    "sentiment_score": 0.01,
+    "emotional_affinity_score": 85,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.91
   },
   {
     "record_id": "8755eaa545a932ccb1b70102",
@@ -5045,7 +6575,13 @@
     "reddit_post_id": "bvnkfj",
     "content_type": "post",
     "score": 517,
-    "search_query": "as a woman fan"
+    "search_query": "as a woman fan",
+    "sentiment": "negative",
+    "sentiment_score": 0.02,
+    "emotional_affinity_score": 87,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.92
   },
   {
     "record_id": "fc9d2d0ddf91b619e37a3d39",
@@ -5065,7 +6601,13 @@
     "reddit_post_id": "4wintx",
     "content_type": "post",
     "score": 181,
-    "search_query": "as a woman fan"
+    "search_query": "as a woman fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.98,
+    "emotional_affinity_score": 66,
+    "behavioral_pathway": "churn_risk",
+    "priority_signal": "none",
+    "confidence_score": 0.81
   },
   {
     "record_id": "e2c8e1693c8f829563f53409",
@@ -5085,7 +6627,13 @@
     "reddit_post_id": "quiw37",
     "content_type": "post",
     "score": 266,
-    "search_query": "as a woman fan"
+    "search_query": "as a woman fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.99,
+    "emotional_affinity_score": 54,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.76
   },
   {
     "record_id": "258b88583686fcbc028f0c68",
@@ -5105,7 +6653,13 @@
     "reddit_post_id": "jh2y33",
     "content_type": "post",
     "score": 28,
-    "search_query": "as a woman fan"
+    "search_query": "as a woman fan",
+    "sentiment": "positive",
+    "sentiment_score": 1.0,
+    "emotional_affinity_score": 58,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.79
   },
   {
     "record_id": "ef7e41d719bea2a540f68086",
@@ -5125,7 +6679,13 @@
     "reddit_post_id": "2typ14",
     "content_type": "post",
     "score": 25,
-    "search_query": "as a woman fan"
+    "search_query": "as a woman fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.7,
+    "emotional_affinity_score": 73,
+    "behavioral_pathway": "identity_attachment",
+    "priority_signal": "none",
+    "confidence_score": 0.56
   },
   {
     "record_id": "bd5834864c547df3d9f389e1",
@@ -5145,7 +6705,13 @@
     "reddit_post_id": "fggvah",
     "content_type": "post",
     "score": 13,
-    "search_query": "as a woman fan"
+    "search_query": "as a woman fan",
+    "sentiment": "positive",
+    "sentiment_score": 1.0,
+    "emotional_affinity_score": 56,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.77
   },
   {
     "record_id": "58fbf2a093390f021d638fb9",
@@ -5165,7 +6731,13 @@
     "reddit_post_id": "nfwh1d",
     "content_type": "post",
     "score": 6846,
-    "search_query": "girl fan"
+    "search_query": "girl fan",
+    "sentiment": "neutral",
+    "sentiment_score": 0.5,
+    "emotional_affinity_score": 45,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.23
   },
   {
     "record_id": "5107752f02700c90b9f0bc84",
@@ -5186,7 +6758,13 @@
     "reddit_comment_id": "fjbefdp",
     "content_type": "comment",
     "score": 382,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "neutral",
+    "sentiment_score": 0.51,
+    "emotional_affinity_score": 88,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.45
   },
   {
     "record_id": "5dd2b9b4690af168df844b54",
@@ -5206,7 +6784,13 @@
     "reddit_post_id": "memt1s",
     "content_type": "post",
     "score": 22037,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.94,
+    "emotional_affinity_score": 64,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.76
   },
   {
     "record_id": "10d6abb6ca9ad472ab3ea383",
@@ -5226,7 +6810,13 @@
     "reddit_post_id": "1nguo1i",
     "content_type": "post",
     "score": 41,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.99,
+    "emotional_affinity_score": 93,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.96
   },
   {
     "record_id": "ce42ca52d197e85278684a61",
@@ -5247,7 +6837,13 @@
     "reddit_comment_id": "c9jgo05",
     "content_type": "comment",
     "score": 4,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "negative",
+    "sentiment_score": 0.45,
+    "emotional_affinity_score": 45,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.27
   },
   {
     "record_id": "a9021bccd680f4b34547b7c5",
@@ -5267,7 +6863,13 @@
     "reddit_post_id": "g65zjn",
     "content_type": "post",
     "score": 567,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.98,
+    "emotional_affinity_score": 91,
+    "behavioral_pathway": "identity_attachment",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.93
   },
   {
     "record_id": "bbd882567cf65c1a156b5980",
@@ -5287,7 +6889,13 @@
     "reddit_post_id": "5kr8cp",
     "content_type": "post",
     "score": 122,
-    "search_query": "female fan"
+    "search_query": "female fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.99,
+    "emotional_affinity_score": 71,
+    "behavioral_pathway": "identity_attachment",
+    "priority_signal": "none",
+    "confidence_score": 0.85
   },
   {
     "record_id": "512a6441a730745fa67e617f",
@@ -5307,7 +6915,13 @@
     "reddit_post_id": "1bhvl7k",
     "content_type": "post",
     "score": 1424,
-    "search_query": "women fans"
+    "search_query": "women fans",
+    "sentiment": "negative",
+    "sentiment_score": 0.13,
+    "emotional_affinity_score": 92,
+    "behavioral_pathway": "conversion_trigger",
+    "priority_signal": "conversion_moment",
+    "confidence_score": 0.83
   },
   {
     "record_id": "bea1fedad8298a9f1f88193b",
@@ -5328,7 +6942,13 @@
     "reddit_comment_id": "i9ufj9a",
     "content_type": "comment",
     "score": 1229,
-    "search_query": "women fans"
+    "search_query": "women fans",
+    "sentiment": "negative",
+    "sentiment_score": 0.12,
+    "emotional_affinity_score": 75,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.75
   },
   {
     "record_id": "0874494b41626db78252fbaf",
@@ -5348,7 +6968,13 @@
     "reddit_post_id": "16prf5",
     "content_type": "post",
     "score": 320,
-    "search_query": "as a woman fan"
+    "search_query": "as a woman fan",
+    "sentiment": "negative",
+    "sentiment_score": 0.43,
+    "emotional_affinity_score": 93,
+    "behavioral_pathway": "churn_risk",
+    "priority_signal": "none",
+    "confidence_score": 0.53
   },
   {
     "record_id": "9a29cf454366f858f91d923a",
@@ -5368,7 +6994,13 @@
     "reddit_post_id": "309t6l",
     "content_type": "post",
     "score": 262,
-    "search_query": "as a woman fan"
+    "search_query": "as a woman fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.93,
+    "emotional_affinity_score": 38,
+    "behavioral_pathway": "none",
+    "priority_signal": "identity_anchor",
+    "confidence_score": 0.62
   },
   {
     "record_id": "0b09a2c8cbef982cfa822f14",
@@ -5388,7 +7020,13 @@
     "reddit_post_id": "b2y6y7",
     "content_type": "post",
     "score": 346,
-    "search_query": "as a woman fan"
+    "search_query": "as a woman fan",
+    "sentiment": "positive",
+    "sentiment_score": 1.0,
+    "emotional_affinity_score": 92,
+    "behavioral_pathway": "none",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.96
   },
   {
     "record_id": "18f4178b1db02a80adf07e10",
@@ -5409,7 +7047,13 @@
     "reddit_comment_id": "eiw05ib",
     "content_type": "comment",
     "score": 42,
-    "search_query": "as a woman fan"
+    "search_query": "as a woman fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.83,
+    "emotional_affinity_score": 54,
+    "behavioral_pathway": "none",
+    "priority_signal": "trust_split",
+    "confidence_score": 0.6
   },
   {
     "record_id": "8b17e127cd0ebc5af134dab5",
@@ -5429,7 +7073,13 @@
     "reddit_post_id": "6vjx8z",
     "content_type": "post",
     "score": 96,
-    "search_query": "as a woman fan"
+    "search_query": "as a woman fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.95,
+    "emotional_affinity_score": 87,
+    "behavioral_pathway": "none",
+    "priority_signal": "none",
+    "confidence_score": 0.88
   },
   {
     "record_id": "a791171eed29bc63a02e04bf",
@@ -5450,7 +7100,13 @@
     "reddit_comment_id": "h5w1wws",
     "content_type": "comment",
     "score": 64,
-    "search_query": "as a woman fan"
+    "search_query": "as a woman fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.99,
+    "emotional_affinity_score": 89,
+    "behavioral_pathway": "churn_risk",
+    "priority_signal": "none",
+    "confidence_score": 0.93
   },
   {
     "record_id": "e4957e9a650cbbea7c6244b4",
@@ -5470,7 +7126,13 @@
     "reddit_post_id": "d2c2jk",
     "content_type": "post",
     "score": 961,
-    "search_query": "girl fan"
+    "search_query": "girl fan",
+    "sentiment": "negative",
+    "sentiment_score": 0.01,
+    "emotional_affinity_score": 48,
+    "behavioral_pathway": "churn_risk",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.73
   },
   {
     "record_id": "1ad46e5c1f973c78e41a0fd3",
@@ -5490,7 +7152,13 @@
     "reddit_post_id": "4i2kli",
     "content_type": "post",
     "score": 2074,
-    "search_query": "girl fan"
+    "search_query": "girl fan",
+    "sentiment": "positive",
+    "sentiment_score": 0.99,
+    "emotional_affinity_score": 79,
+    "behavioral_pathway": "loyalty_signal",
+    "priority_signal": "identity_anchor",
+    "confidence_score": 0.89
   },
   {
     "record_id": "254e8cd702bd58b90c8778aa",
@@ -5510,6 +7178,12 @@
     "reddit_post_id": "1143w9d",
     "content_type": "post",
     "score": 284,
-    "search_query": "girl fan"
+    "search_query": "girl fan",
+    "sentiment": "negative",
+    "sentiment_score": 0.05,
+    "emotional_affinity_score": 80,
+    "behavioral_pathway": "identity_attachment",
+    "priority_signal": "loyalty_stress",
+    "confidence_score": 0.85
   }
 ]
