@@ -25,12 +25,13 @@ from data import (
     affinity_trend_annotations,
     segment_summary,
 )
+from insights import PRESET_QUERIES, get_insight, compute_simulation
 
 # ── Page config ────────────────────────────────────────────────────────────
 
 st.set_page_config(
     page_title="FanVerse",
-    page_icon="📡",
+    page_icon="💫",
     layout="wide",
     initial_sidebar_state="collapsed",
 )
@@ -121,7 +122,9 @@ st.markdown("""
 
 # ── Top bar ────────────────────────────────────────────────────────────────
 
-st.markdown("""
+title_col = st.columns([1])[0]
+with title_col:
+    st.markdown("""
 <div class="topbar">
   <span class="wordmark">FANVERSE</span>
   <span class="tagline">Female Fan Intelligence</span>
@@ -261,7 +264,7 @@ with trend_col:
             if ann["sport"] in sports_in_data:
                 colour = SPORT_COLOURS.get(ann["sport"], "#888")
                 signal_str = ann["signal"] if ann["signal"] != "none" else ""
-                hover = f"{ann['snippet']}"
+                hover = ann["full_text"][:120].replace("\n", " ") + "…"
                 if signal_str:
                     hover += f"<br><i>{signal_str}</i>"
                 fig.add_annotation(
@@ -292,12 +295,16 @@ with trend_col:
                     arrow = "▲" if ann["score"] >= 70 else "▼"
                     colour = "#2a7a2a" if ann["score"] >= 70 else "#c03030"
                     signal_display = ann["signal"] if ann["signal"] != "none" else "—"
+                    date_display = ann["date"].strftime("%b %d, %Y") if hasattr(ann["date"], "strftime") else str(ann["date"])
                     st.markdown(
-                        f"<span style='color:{colour};font-weight:bold;'>{arrow} {ann['score']}</span> "
-                        f"&nbsp;·&nbsp; <code>{ann['sport']}</code> "
-                        f"&nbsp;·&nbsp; <span style='color:#888;font-size:12px;'>{ann['date'].strftime('%b %d, %Y') if hasattr(ann['date'], 'strftime') else ann['date']}</span> "
-                        f"&nbsp;·&nbsp; <span style='font-size:11px;color:#4A90D9;'>{signal_display}</span><br>"
-                        f"<span style='font-size:12px;color:#555;'>{ann['snippet']}</span>",
+                        f"<span style='color:{colour};font-weight:bold;'>{arrow} {ann['score']}</span>"
+                        f"&nbsp;·&nbsp;<code>{ann['sport']}</code>"
+                        f"&nbsp;·&nbsp;<span style='color:#888;font-size:12px;'>{date_display}</span>"
+                        f"&nbsp;·&nbsp;<span style='font-size:11px;color:#4A90D9;'>{signal_display}</span>",
+                        unsafe_allow_html=True,
+                    )
+                    st.markdown(
+                        f"<div style='font-size:12px;color:#333;line-height:1.6;white-space:pre-wrap;margin-top:4px;'>{ann['full_text']}</div>",
                         unsafe_allow_html=True,
                     )
                     st.markdown("---")
@@ -350,8 +357,8 @@ st.markdown('<div class="section-header">Fan Segment Map — PCA 2D Scatter</div
 
 pca_df = build_pca_df()
 
-tab_all, tab_wnba, tab_nwsl, tab_wta, tab_social, tab_research = st.tabs([
-    "All Sports", "WNBA", "NWSL", "WTA", "Social Only", "Research Only"
+tab_all, tab_wnba, tab_nwsl, tab_social, tab_research = st.tabs([
+    "All Sports", "WNBA", "NWSL", "Social Only", "Research Only"
 ])
 
 def _render_scatter(df: pd.DataFrame, title_note: str = "") -> None:
@@ -382,15 +389,19 @@ def _render_scatter(df: pd.DataFrame, title_note: str = "") -> None:
                 line=dict(width=0.5, color="white"),
                 opacity=0.85,
             ),
-            customdata=sub[["hover_text", "behavioral_pathway",
+            customdata=sub[["report_title", "hover_text", "behavioral_pathway",
                              "priority_signal", "sport", "confidence_score"]].values,
             hovertemplate=(
+                "<b>%{fullData.name}</b><br>"
                 "<b>%{customdata[0]}</b><br>"
-                "Pathway: %{customdata[1]}<br>"
-                "Priority: %{customdata[2]}<br>"
-                "Sport: %{customdata[3]}<br>"
-                "Confidence: %{customdata[4]:.2f}<br>"
-                "<extra>%{fullData.name}</extra>"
+                "<br>"
+                "%{customdata[1]}<br>"
+                "<br>"
+                "Pathway: %{customdata[2]}<br>"
+                "Priority: %{customdata[3]}<br>"
+                "Sport: %{customdata[4]}<br>"
+                "Confidence: %{customdata[5]:.2f}"
+                "<extra></extra>"
             ),
         ))
 
@@ -427,7 +438,6 @@ def _render_scatter(df: pd.DataFrame, title_note: str = "") -> None:
 
 
 with tab_all:
-    # Deduplicate on record_id so multi-sport records appear once
     _render_scatter(pca_df.drop_duplicates("record_id"))
 
 with tab_wnba:
@@ -435,12 +445,6 @@ with tab_wnba:
 
 with tab_nwsl:
     _render_scatter(pca_df[pca_df["sport"] == "NWSL"], "NWSL only")
-
-with tab_wta:
-    wta_df = pca_df[pca_df["sport"] == "WTA"]
-    if len(wta_df) < 5:
-        st.caption(f"Only {len(wta_df)} WTA records in dataset — scatter shown but interpret with caution.")
-    _render_scatter(wta_df, "WTA only")
 
 with tab_social:
     _render_scatter(
@@ -457,24 +461,344 @@ with tab_research:
 st.markdown("<div style='margin-top:24px;'></div>", unsafe_allow_html=True)
 
 
-# ── Placeholders (Person B — Sankey + Feed, Person C — Insight + Sim) ─────
+# ── Row: Behavioural Pathways + Cultural Signal Feed ──────────────────────
 
 b_col, feed_col = st.columns(2)
 
 with b_col:
-    st.markdown('<div class="section-header">Behavioural Pathways</div>', unsafe_allow_html=True)
-    st.info("🔧  Person B — Sankey diagram here. Use `signals[['behavioral_pathway','priority_signal','segment']]`.")
+    st.markdown('<div class="section-header">Priority Signals by Sport</div>', unsafe_allow_html=True)
+
+    SIGNAL_COLOURS = {
+        "loyalty_stress":       "#D95B5B",
+        "identity_anchor":      "#4A90D9",
+        "trust_split":          "#E8A838",
+        "cross_sport_superfan": "#5BAD6F",
+        "conversion_moment":    "#9B6FD9",
+    }
+    SIGNAL_LABELS = {
+        "loyalty_stress":       "Loyalty Stress",
+        "identity_anchor":      "Identity Anchor",
+        "trust_split":          "Trust Split",
+        "cross_sport_superfan": "Cross-Sport Super Fan",
+        "conversion_moment":    "Conversion Moment",
+    }
+    SPORT_DISPLAY = {"general": "General / Multi-Sport", "WNBA": "WNBA", "NWSL": "NWSL"}
+
+    bar_src = signals.drop_duplicates("record_id")
+    bar_df  = bar_src[bar_src["priority_signal"] != "none"][["sport", "priority_signal"]].copy()
+    bar_df["sport"] = bar_df["sport"].map(SPORT_DISPLAY).fillna(bar_df["sport"])
+
+    if bar_df.empty:
+        st.info("No priority signals in current filter.")
+    else:
+        counts = bar_df.groupby(["sport", "priority_signal"]).size().reset_index(name="n")
+        sport_order = [s for s in ["WNBA", "NWSL", "General / Multi-Sport"] if s in counts["sport"].unique()]
+
+        fig_bar = go.Figure()
+        for signal, colour in SIGNAL_COLOURS.items():
+            sub = counts[counts["priority_signal"] == signal]
+            if sub.empty:
+                continue
+            fig_bar.add_trace(go.Bar(
+                name=SIGNAL_LABELS.get(signal, signal),
+                x=sub["sport"],
+                y=sub["n"],
+                marker_color=colour,
+                hovertemplate="%{x}<br>" + SIGNAL_LABELS.get(signal, signal) + ": %{y} records<extra></extra>",
+            ))
+
+        fig_bar.update_layout(
+            barmode="group",
+            height=320,
+            margin=dict(l=0, r=0, t=8, b=0),
+            plot_bgcolor="white",
+            paper_bgcolor="white",
+            legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="left", x=0, font=dict(size=10)),
+            xaxis=dict(title="", showgrid=False),
+            yaxis=dict(title="Records", showgrid=True, gridcolor="#f0f0f0"),
+            bargap=0.25,
+            bargroupgap=0.08,
+        )
+        st.plotly_chart(fig_bar, use_container_width=True)
+        total_sig = len(bar_df)
+        total_all = len(bar_src)
+        st.caption(f"{total_sig} of {total_all} records carry a priority signal ({round(total_sig / total_all * 100)}%)")
+
+    with st.expander("What do these signals mean?"):
+        st.markdown("""
+| Signal | What it means |
+|---|---|
+| **Loyalty Stress** | Fan mentions threats to their attachment — trades, cuts, scandals, salary disputes, "last straw" language. Still engaged but under strain. |
+| **Identity Anchor** | Fan's identity is tied to a specific player. Language like "she's the reason I watch", "follow her wherever she goes", "protect her". |
+| **Trust Split** | Fan supports the players but has lost trust in the organisation. "Love the players, hate the front office / ownership / management." |
+| **Cross-Sport Super Fan** | Fan explicitly follows multiple women's leagues. "WNBA and NWSL", "watch both", "also follow". High co-marketing value. |
+| **Conversion Moment** | Fan describes the moment they became a fan. "First game", "got me hooked", "started watching because of her". New fan acquisition signal. |
+        """)
+
 
 with feed_col:
     st.markdown('<div class="section-header">Cultural Signal Feed</div>', unsafe_allow_html=True)
-    st.info("🔧  Person B — filtered record list here. Use `signals` sorted by date, filtered on churn/stress signals.")
+
+    # Signal → (hex colour, display label)
+    FEED_SIGNAL_STYLE = {
+        "churn_risk":            ("#D95B5B", "Churn Risk"),
+        "disengagement_marker":  ("#D95B5B", "Disengagement"),
+        "loyalty_stress":        ("#D95B5B", "Loyalty Stress"),
+        "trust_split":           ("#E8A838", "Trust Split"),
+        "purchase_intent":       ("#5BAD6F", "Purchase Intent"),
+        "loyalty_signal":        ("#5BAD6F", "Loyalty Signal"),
+        "conversion_trigger":    ("#5BAD6F", "Conversion Trigger"),
+        "identity_anchor":       ("#4A90D9", "Identity Anchor"),
+        "identity_attachment":   ("#4A90D9", "Identity Attachment"),
+        "community_influence":   ("#9B6FD9", "Community Influence"),
+        "cross_sport_superfan":  ("#5BAD6F", "Cross-Sport Super Fan"),
+        "conversion_moment":     ("#9B6FD9", "Conversion Moment"),
+    }
+
+    feed_df = signals.drop_duplicates("record_id").copy()
+    feed_df["date"] = pd.to_datetime(feed_df["date"], errors="coerce")
+    feed_df = feed_df[
+        (feed_df["behavioral_pathway"] != "none") |
+        (feed_df["priority_signal"]    != "none")
+    ].sort_values("date", ascending=False)
+
+    if feed_df.empty:
+        st.info("No signals in current filter.")
+    else:
+        n_shown = 0
+        for _, row in feed_df.iterrows():
+            if n_shown >= 10:
+                break
+
+            text = str(row.get("text", "")).strip()
+            if len(text) < 40:
+                continue
+
+            title        = str(row.get("report_title", "")).strip()
+            date_str     = row["date"].strftime("%b %d, %Y") if pd.notna(row["date"]) else "—"
+            sport        = str(row.get("sport", "—"))
+            subreddit    = str(row.get("subreddit", "")) or ""
+            source_label = f"r/{subreddit}" if subreddit and subreddit != "nan" else str(row.get("source", "—"))
+
+            # Pick the most specific signal for display
+            active_signal = (
+                row["priority_signal"]
+                if row["priority_signal"] != "none"
+                else row["behavioral_pathway"]
+            )
+            sig_colour, sig_label = FEED_SIGNAL_STYLE.get(active_signal, ("#aaa", active_signal))
+
+            sent_colour = "#c03030" if row["sentiment"] == "negative" else (
+                "#2a7a2a" if row["sentiment"] == "positive" else "#888"
+            )
+
+            expander_label = f"{sig_label}  ·  {date_str}  ·  {source_label}"
+
+            with st.expander(expander_label, expanded=False):
+                st.markdown(
+                    f"<span style='display:inline-block;background:{sig_colour}22;color:{sig_colour};"
+                    f"border:1px solid {sig_colour};border-radius:4px;padding:2px 8px;"
+                    f"font-size:11px;font-weight:600;margin-bottom:6px;'>{sig_label}</span>",
+                    unsafe_allow_html=True,
+                )
+                if title:
+                    st.markdown(f"**{title}**")
+                st.markdown(
+                    f"<span style='font-size:11px;color:#aaa;'>{sport} · "
+                    f"sentiment: <span style='color:{sent_colour};'>{row['sentiment']} "
+                    f"({row['sentiment_score']:.2f})</span> · "
+                    f"affinity: {int(row['emotional_affinity_score'])}</span>",
+                    unsafe_allow_html=True,
+                )
+                st.markdown("---")
+                st.markdown(
+                    f"<div style='font-size:13px;color:#333;line-height:1.6;white-space:pre-wrap;'>{text}</div>",
+                    unsafe_allow_html=True,
+                )
+            n_shown += 1
 
 st.markdown("<div style='margin-top:16px;'></div>", unsafe_allow_html=True)
+
+# ── Insight Panel ──────────────────────────────────────────────────────────
 
 st.markdown('<div class="section-header">Insight Panel — Ask FanVerse</div>', unsafe_allow_html=True)
-st.info("🔧  Person C — Claude API insight panel here. Import `signals` and `segments` from `data.apply_filters()`.")
 
-st.markdown("<div style='margin-top:16px;'></div>", unsafe_allow_html=True)
+# Session state
+if "fanverse_query"     not in st.session_state:
+    st.session_state["fanverse_query"]     = None
+if "fanverse_query_idx" not in st.session_state:
+    st.session_state["fanverse_query_idx"] = None
+if "fanverse_insight"   not in st.session_state:
+    st.session_state["fanverse_insight"]   = None
+
+# Preset query chips
+st.markdown("<div style='font-size:11px;color:#999;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;'>Preset queries</div>", unsafe_allow_html=True)
+chip_cols = st.columns(len(PRESET_QUERIES))
+for i, q in enumerate(PRESET_QUERIES):
+    with chip_cols[i]:
+        if st.button(q, key=f"preset_{i}", use_container_width=True):
+            st.session_state["fanverse_query"]     = q
+            st.session_state["fanverse_query_idx"] = i
+            st.session_state["fanverse_insight"]   = get_insight(q, signals, segments)
+
+# Free-text input
+st.markdown("<div style='margin-top:10px;'></div>", unsafe_allow_html=True)
+free_col, btn_col = st.columns([5, 1])
+with free_col:
+    free_text = st.text_input(
+        "Custom query",
+        placeholder="Ask anything about your female fan base…",
+        label_visibility="collapsed",
+        key="free_query_input",
+    )
+with btn_col:
+    if st.button("Ask →", use_container_width=True, type="primary"):
+        if free_text.strip():
+            st.session_state["fanverse_query"]     = free_text.strip()
+            st.session_state["fanverse_query_idx"] = None
+            st.session_state["fanverse_insight"]   = get_insight(free_text.strip(), signals, segments)
+
+# Response card
+st.markdown("<div style='margin-top:14px;'></div>", unsafe_allow_html=True)
+insight = st.session_state["fanverse_insight"]
+
+if insight is None:
+    st.markdown(
+        "<div style='background:#fafafa;border:1px solid #eee;border-radius:8px;"
+        "padding:20px;text-align:center;color:#bbb;font-size:13px;'>"
+        "Select a preset query or type your own to generate an insight."
+        "</div>",
+        unsafe_allow_html=True,
+    )
+elif not insight["ready"]:
+    st.markdown(
+        "<div style='background:#fffbe6;border:1px solid #ffe58f;border-radius:8px;"
+        "padding:16px 20px;font-size:13px;color:#7a6200;'>"
+        "<b>Claude API not yet connected.</b><br>"
+        "Open <code>dashboard/insights.py</code> and follow the instructions in "
+        "<code>get_insight()</code> to wire in the API key and model call."
+        "</div>",
+        unsafe_allow_html=True,
+    )
+else:
+    r_finding, r_evidence, r_confidence, r_action = st.columns(4)
+    confidence_colour = (
+        "#2a7a2a" if insight["confidence"] >= 70
+        else "#c07000" if insight["confidence"] >= 45
+        else "#c03030"
+    )
+
+    with r_finding:
+        st.markdown(
+            "<div style='font-size:10px;font-weight:700;text-transform:uppercase;"
+            "letter-spacing:1px;color:#999;margin-bottom:6px;'>Finding</div>",
+            unsafe_allow_html=True,
+        )
+        st.markdown(f"<div style='font-size:13px;color:#333;line-height:1.5;'>{insight['finding']}</div>", unsafe_allow_html=True)
+
+    with r_evidence:
+        st.markdown(
+            "<div style='font-size:10px;font-weight:700;text-transform:uppercase;"
+            "letter-spacing:1px;color:#999;margin-bottom:6px;'>Evidence</div>",
+            unsafe_allow_html=True,
+        )
+        st.markdown(f"<div style='font-size:13px;color:#555;line-height:1.5;'>{insight['evidence']}</div>", unsafe_allow_html=True)
+
+    with r_confidence:
+        st.markdown(
+            "<div style='font-size:10px;font-weight:700;text-transform:uppercase;"
+            "letter-spacing:1px;color:#999;margin-bottom:6px;'>Confidence</div>",
+            unsafe_allow_html=True,
+        )
+        st.markdown(
+            f"<div style='font-size:38px;font-weight:700;color:{confidence_colour};line-height:1;'>"
+            f"{insight['confidence']}%</div>"
+            f"<div style='font-size:11px;color:#aaa;margin-top:4px;'>signal match</div>",
+            unsafe_allow_html=True,
+        )
+
+    with r_action:
+        st.markdown(
+            "<div style='font-size:10px;font-weight:700;text-transform:uppercase;"
+            "letter-spacing:1px;color:#999;margin-bottom:6px;'>Recommended Action</div>",
+            unsafe_allow_html=True,
+        )
+        st.markdown(
+            f"<div style='font-size:13px;color:#333;line-height:1.5;'>{insight['recommended_action']}</div>",
+            unsafe_allow_html=True,
+        )
+
+st.markdown("<div style='margin-top:24px;'></div>", unsafe_allow_html=True)
+
+
+# ── Live Simulation ────────────────────────────────────────────────────────
 
 st.markdown('<div class="section-header">Live Simulation — Action vs Status Quo</div>', unsafe_allow_html=True)
-st.info("🔧  Person C — simulation bar charts here. Use segment cluster means from `segments`.")
+
+sim = compute_simulation(st.session_state["fanverse_query_idx"])
+
+sim_chart_col, sim_summary_col = st.columns([3, 2])
+
+with sim_chart_col:
+    fig_sim = go.Figure()
+
+    uplift_vals = [p - b for p, b in zip(sim["projected"], sim["baseline"])]
+
+    fig_sim.add_trace(go.Bar(
+        name="Baseline (status quo)",
+        y=sim["segments"],
+        x=sim["baseline"],
+        orientation="h",
+        marker_color="#d0d0d0",
+        hovertemplate="%{y}<br>Baseline: %{x}%<extra></extra>",
+    ))
+    fig_sim.add_trace(go.Bar(
+        name="Uplift with action",
+        y=sim["segments"],
+        x=uplift_vals,
+        orientation="h",
+        marker_color="#4A90D9",
+        hovertemplate="%{y}<br>Uplift: +%{x}%<extra></extra>",
+    ))
+
+    fig_sim.update_layout(
+        barmode="stack",
+        height=320,
+        margin=dict(l=0, r=40, t=8, b=0),
+        plot_bgcolor="white",
+        paper_bgcolor="white",
+        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="left", x=0, font=dict(size=10)),
+        xaxis=dict(
+            title="Projected 90-day retention (%)",
+            range=[0, 100],
+            showgrid=True, gridcolor="#f0f0f0",
+            title_font=dict(size=11),
+        ),
+        yaxis=dict(showgrid=False, tickfont=dict(size=11)),
+    )
+    st.plotly_chart(fig_sim, use_container_width=True)
+
+with sim_summary_col:
+    s = sim["summary"]
+
+    st.markdown(
+        "<div style='background:#fafafa;border:1px solid #eee;border-radius:8px;padding:16px 18px;'>",
+        unsafe_allow_html=True,
+    )
+
+    def _metric_row(label: str, value: str, colour: str) -> None:
+        st.markdown(
+            f"<div style='border-bottom:1px solid #f0f0f0;padding:8px 0;'>"
+            f"<div style='font-size:10px;color:#999;text-transform:uppercase;letter-spacing:1px;'>{label}</div>"
+            f"<div style='font-size:26px;font-weight:700;color:{colour};line-height:1.2;'>{value}</div>"
+            f"</div>",
+            unsafe_allow_html=True,
+        )
+
+    _metric_row("Fans re-engaged (at-risk segments)", f"+{s['fans_reengaged_pct']}%", "#2a7a2a")
+    _metric_row("Churn reduction",                    f"−{s['churn_reduction']}%",   "#4A90D9")
+    _metric_row("Conversion uplift (mid-tier)",       f"+{s['conversion_uplift']}%", "#2a7a2a")
+    _metric_row("Model confidence",                   f"{s['model_confidence']}%",   "#888")
+
+    st.markdown("</div>", unsafe_allow_html=True)
+    st.caption("Model-based projection · 90-day horizon · anchored to real cluster sentiment means")

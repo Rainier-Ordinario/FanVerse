@@ -17,9 +17,9 @@ _ROOT = Path(__file__).parent.parent
 _SIGNALS_PATH  = _ROOT / "repository" / "repository_signals.json"
 _SEGMENTS_PATH = _ROOT / "notebooks"   / "fan_segments.json"
 
-SPORT_OPTIONS  = ["All", "WNBA", "NWSL", "WTA", "volleyball"]
+SPORT_OPTIONS  = ["All", "WNBA", "NWSL"]
 SOURCE_OPTIONS = ["All", "Social", "Research"]
-PERIOD_OPTIONS = ["30d", "90d", "All time"]
+PERIOD_OPTIONS = ["1yr", "5yr", "All time"]
 
 # Maps the source toggle to actual source values in the data
 SOURCE_MAP = {
@@ -118,9 +118,9 @@ def apply_filters(
         segments = segments[segments["source"].isin(allowed)]
 
     # Period filter — applied to signals only (segments don't carry dates)
-    if period != "All time":
-        days = int(period.replace("d", ""))
-        cutoff = pd.Timestamp.now() - pd.Timedelta(days=days)
+    _period_days = {"1yr": 365, "5yr": 1825}
+    if period in _period_days:
+        cutoff = pd.Timestamp.now() - pd.Timedelta(days=_period_days[period])
         signals = signals[signals["date"] >= cutoff]
 
     return signals.reset_index(drop=True), segments.reset_index(drop=True)
@@ -232,16 +232,13 @@ def affinity_trend_annotations(signals: pd.DataFrame, top_n: int = 5) -> list[di
 
     annotations = []
     for _, row in notable.iterrows():
-        snippet = row["text"][:80].replace("\n", " ").strip()
-        if len(row["text"]) > 80:
-            snippet += "…"
         annotations.append({
-            "date":    row["date"],
-            "sport":   row["sport"],
-            "score":   row["emotional_affinity_score"],
-            "snippet": snippet,
-            "signal":  row["priority_signal"] if row["priority_signal"] != "none" else row["behavioral_pathway"],
-            "source":  row["source"],
+            "date":      row["date"],
+            "sport":     row["sport"],
+            "score":     row["emotional_affinity_score"],
+            "full_text": row["text"].strip(),
+            "signal":    row["priority_signal"] if row["priority_signal"] != "none" else row["behavioral_pathway"],
+            "source":    row["source"],
         })
     return sorted(annotations, key=lambda x: x["date"])
 
@@ -287,7 +284,7 @@ def build_pca_df() -> pd.DataFrame:
 
     # Merge in hover text + signal labels from signals (deduped — avoid sport explosion)
     signals = _load_signals_raw()
-    sig_cols = ["record_id", "text", "behavioral_pathway", "priority_signal", "subreddit"]
+    sig_cols = ["record_id", "text", "report_title", "behavioral_pathway", "priority_signal", "subreddit"]
     sig_dedup = signals.drop_duplicates("record_id")[sig_cols]
 
     df = seg_df.merge(sig_dedup, on="record_id", how="left")
