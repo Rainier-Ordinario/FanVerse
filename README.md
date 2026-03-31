@@ -1,5 +1,5 @@
 # FanVerse
-Install dependencies with `uv sync`. 
+This project uses uv, install dependencies with `uv sync`. 
 
 
 Run the dashboard locally by doing:
