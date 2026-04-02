@@ -1,0 +1,21 @@
+[project]
+name = "fanverse"
+version = "0.1.0"
+description = "FanVerse signal extraction and Reddit scraper"
+requires-python = ">=3.10"
+dependencies = [
+    "vaderSentiment",
+    "transformers",
+    "requests",
+    "python-dotenv",
+    "torch",
+    "jupyter>=1.1.1",
+    "pandas>=2.3.3",
+    "scikit-learn>=1.7.2",
+    "matplotlib>=3.10.8",
+    "streamlit>=1.41.0",
+    "plotly>=5.24.0",
+    "google-generativeai>=0.8.0",
+    "rembg[cpu]>=2.0.69",
+    "pillow>=12.1.1",
+]
