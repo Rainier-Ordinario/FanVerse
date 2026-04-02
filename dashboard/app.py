@@ -360,9 +360,25 @@ st.markdown('<div class="section-header">Fan Segment Map — PCA 2D Scatter</div
 
 pca_df = build_pca_df()
 
-tab_all, tab_wnba, tab_nwsl, tab_social, tab_research = st.tabs([
-    "All Sports", "WNBA", "NWSL", "Social Only", "Research Only"
-])
+# Apply the sidebar sport filter so the scatter respects the global selection.
+pca_view = pca_df[pca_df["sport"] == sport_filter] if sport_filter != "All" else pca_df
+
+# Build sport tabs dynamically from whatever sports are present after filtering.
+_SPORT_TAB_LABELS = {
+    "WNBA": "WNBA", "NWSL": "NWSL", "WTA": "WTA", "PWHL": "PWHL",
+    "NFL": "NFL", "NBA": "NBA", "NHL": "NHL", "MLB": "MLB", "MLS": "MLS",
+    "formula1": "Formula 1", "premierleague": "Premier League",
+    "olympics": "Olympics", "general": "General", "volleyball": "Volleyball",
+}
+_SOCIAL_SOURCES = {"reddit", "youtube", "substack"}
+
+sports_in_pca = sorted(pca_view["sport"].unique())
+_all_tab_labels = (
+    ["All"]
+    + [_SPORT_TAB_LABELS.get(s, s) for s in sports_in_pca]
+    + ["Social Only", "Research Only"]
+)
+_tabs = st.tabs(_all_tab_labels)
 
 def _render_scatter(df: pd.DataFrame, title_note: str = "") -> None:
     """Renders a PCA scatter for the given (already filtered) dataframe."""
@@ -440,26 +456,27 @@ def _render_scatter(df: pd.DataFrame, title_note: str = "") -> None:
     st.plotly_chart(fig, use_container_width=True)
 
 
-with tab_all:
-    _render_scatter(pca_df.drop_duplicates("record_id"))
+_n_sport_tabs = len(sports_in_pca)
 
-with tab_wnba:
-    _render_scatter(pca_df[pca_df["sport"] == "WNBA"], "WNBA only")
+with _tabs[0]:
+    _render_scatter(pca_view.drop_duplicates("record_id"))
 
-with tab_nwsl:
-    _render_scatter(pca_df[pca_df["sport"] == "NWSL"], "NWSL only")
+for _i, _sp in enumerate(sports_in_pca):
+    with _tabs[_i + 1]:
+        _sp_label = _SPORT_TAB_LABELS.get(_sp, _sp)
+        _render_scatter(pca_view[pca_view["sport"] == _sp], f"{_sp_label} only")
 
-with tab_social:
+with _tabs[_n_sport_tabs + 1]:
     _render_scatter(
-        pca_df[pca_df["source"] == "reddit"].drop_duplicates("record_id"),
-        "Reddit / social only",
+        pca_view[pca_view["source"].isin(_SOCIAL_SOURCES)].drop_duplicates("record_id"),
+        "Social only",
     )
 
-with tab_research:
-    research_df = pca_df[pca_df["source"] != "reddit"].drop_duplicates("record_id")
-    if len(research_df) < 10:
-        st.caption(f"Only {len(research_df)} research records — sparse by design at this stage.")
-    _render_scatter(research_df, "Research reports only")
+with _tabs[_n_sport_tabs + 2]:
+    _research_df = pca_view[~pca_view["source"].isin(_SOCIAL_SOURCES)].drop_duplicates("record_id")
+    if len(_research_df) < 10:
+        st.caption(f"Only {len(_research_df)} research records — sparse by design at this stage.")
+    _render_scatter(_research_df, "Research reports only")
 
 st.markdown("<div style='margin-top:24px;'></div>", unsafe_allow_html=True)
 
@@ -485,7 +502,7 @@ with b_col:
         "cross_sport_superfan": "Cross-Sport Super Fan",
         "conversion_moment":    "Conversion Moment",
     }
-    SPORT_DISPLAY = {"general": "General / Multi-Sport", "WNBA": "WNBA", "NWSL": "NWSL"}
+    SPORT_DISPLAY = {"general": "General / Multi-Sport"}
 
     bar_src = signals.drop_duplicates("record_id")
     bar_df  = bar_src[bar_src["priority_signal"] != "none"][["sport", "priority_signal"]].copy()
@@ -495,7 +512,12 @@ with b_col:
         st.info("No priority signals in current filter.")
     else:
         counts = bar_df.groupby(["sport", "priority_signal"]).size().reset_index(name="n")
-        sport_order = [s for s in ["WNBA", "NWSL", "General / Multi-Sport"] if s in counts["sport"].unique()]
+        # Order sports by total signal count descending so the most data-rich sport leads
+        sport_order = (
+            counts.groupby("sport")["n"].sum()
+            .sort_values(ascending=False)
+            .index.tolist()
+        )
 
         fig_bar = go.Figure()
         for signal, colour in SIGNAL_COLOURS.items():

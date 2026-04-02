@@ -17,15 +17,38 @@ _ROOT = Path(__file__).parent.parent
 _SIGNALS_PATH  = _ROOT / "repository" / "repository_signals.json"
 _SEGMENTS_PATH = _ROOT / "notebooks"   / "fan_segments.json"
 
-SPORT_OPTIONS  = ["All", "WNBA", "NWSL"]
 SOURCE_OPTIONS = ["All", "Social", "Research"]
 PERIOD_OPTIONS = ["1yr", "5yr", "All time"]
 
-# Maps the source toggle to actual source values in the data
+# Maps the source toggle to actual source values in the data.
+# youtube and substack are community/social content, not research reports.
 SOURCE_MAP = {
-    "Social":   {"reddit"},
+    "Social":   {"reddit", "youtube", "substack"},
     "Research": {"wasserman", "deloitte", "bcg", "nielsen", "mckinsey"},
 }
+
+
+def _build_sport_options() -> list[str]:
+    """Derives available sport filter options directly from the signals data file."""
+    try:
+        with open(_SIGNALS_PATH) as f:
+            records = json.load(f)
+        seen: set[str] = {s for r in records for s in r.get("sports", [])}
+        # Preferred display order: women's leagues first, then men's, then global/multi
+        priority = [
+            "WNBA", "NWSL", "WTA", "PWHL",
+            "NFL", "NBA", "NHL", "MLB", "MLS",
+            "formula1", "premierleague", "olympics",
+            "general",
+        ]
+        ordered = [s for s in priority if s in seen]
+        ordered += sorted(seen - set(priority))  # any future additions
+        return ["All"] + ordered
+    except Exception:
+        return ["All", "WNBA", "NWSL"]
+
+
+SPORT_OPTIONS = _build_sport_options()
 
 SEGMENT_COLOURS = {
     "Superfan":                        "#4A90D9",
@@ -37,11 +60,23 @@ SEGMENT_COLOURS = {
 }
 
 SPORT_COLOURS = {
-    "WNBA":       "#D95B5B",
-    "NWSL":       "#5BAD6F",
-    "WTA":        "#E8A838",
-    "volleyball": "#9B6FD9",
-    "general":    "#4A90D9",
+    # Women's leagues
+    "WNBA":         "#D95B5B",
+    "NWSL":         "#5BAD6F",
+    "WTA":          "#E8A838",
+    "PWHL":         "#4A90D9",
+    "volleyball":   "#9B6FD9",
+    # Men's / North American
+    "NFL":          "#C84B31",
+    "NBA":          "#F07B39",
+    "NHL":          "#5B8ED9",
+    "MLB":          "#8B5BAD",
+    "MLS":          "#3BAD8E",
+    # Global / multi-sport
+    "formula1":     "#E84141",
+    "premierleague":"#8B2BE2",
+    "olympics":     "#B8860B",
+    "general":      "#888888",
 }
 
 PATHWAY_LABELS = {
