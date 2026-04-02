@@ -109,7 +109,7 @@ for i, post in enumerate(posts, 1):
         "confidence_score": confidence_score,
     })
 
-    print(f"  [{i}/{total}] {post['post_id'][:8]}... {sentiment} | {behavioral_pathway} | {priority_signal}")
+    print(f"  [{i}/{total}] {str(post['post_id'])[:8]}... {sentiment} | {behavioral_pathway} | {priority_signal}")
 
 # ---- SAVE OUTPUT ----
 with open(OUTPUT_PATH, "w") as f:
