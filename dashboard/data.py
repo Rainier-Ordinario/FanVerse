@@ -14,8 +14,8 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 
 _ROOT = Path(__file__).parent.parent
-_SIGNALS_PATH  = _ROOT / "repository" / "output" / "repository_signals_5wins.json"
-_SEGMENTS_PATH = _ROOT / "repository" / "output" / "fan_segments_5wins.json"
+_SIGNALS_PATH  = _ROOT / "repository" / "output" / "repository_signals_allez_sports.json"
+_SEGMENTS_PATH = _ROOT / "repository" / "output" / "fan_segments_allez_sports.json"
 
 SOURCE_OPTIONS = ["All", "Social", "Research"]
 PERIOD_OPTIONS = ["1yr", "5yr", "All time"]

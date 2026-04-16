@@ -1,0 +1,127 @@
+{
+  "Community Organizer": {
+    "segment_description": "Leaders who coordinate events and run supporter groups.",
+    "why_became_fans": {
+      "Community building": 50,
+      "Team advocacy": 30,
+      "Event organization": 15,
+      "Other": 5
+    },
+    "what_they_care_about_now": {
+      "Organizing events & meetups": 40,
+      "Amplifying team message": 25,
+      "Building supporter group": 20,
+      "Recruiting new fans": 15
+    },
+    "sample_quote": "Ok how do I join? @1972pub",
+    "risk_assessment": "Critical if they leave; can take supporters",
+    "opportunity": "Partner on events, co-create content"
+  },
+  "Detractor": {
+    "segment_description": "Fans expressing negative sentiment about the team.",
+    "why_became_fans": {
+      "Negative team experience": 50,
+      "Institutional concerns": 35,
+      "Player changes": 15
+    },
+    "what_they_care_about_now": {
+      "Negative feedback": 40,
+      "Institutional criticism": 35,
+      "Alternative sports/teams": 25
+    },
+    "sample_quote": "\ud83d\udd25 Set the Bar! \u2764\ufe0f",
+    "risk_assessment": "High risk, already disengaged",
+    "opportunity": "Address concerns or re-engagement campaign"
+  },
+  "Identity-Driven Advocate": {
+    "segment_description": "Fans whose identity is tied to a specific player. They follow players across teams.",
+    "why_became_fans": {
+      "Player storytelling & personal connection": 45,
+      "Player's values & authenticity": 32,
+      "Long-term player loyalty": 18,
+      "Other": 5
+    },
+    "what_they_care_about_now": {
+      "Player updates & news": 38,
+      "Player mental health/well-being": 22,
+      "Player endorsements & sponsors": 18,
+      "Team decisions affecting player": 15,
+      "Other": 7
+    },
+    "sample_quote": "Love coach jackie",
+    "risk_assessment": "High risk if anchor player leaves",
+    "opportunity": "Leverage player storytelling for retention"
+  },
+  "Multi-Sport Devotee": {
+    "segment_description": "Fans active across multiple women's sports communities.",
+    "why_became_fans": {
+      "Women's sports in general": 60,
+      "Community across sports": 25,
+      "Player crossover interest": 15
+    },
+    "what_they_care_about_now": {
+      "Cross-sport content": 50,
+      "Women's sports news": 30,
+      "Community events": 20
+    },
+    "sample_quote": "Journaling is so underrated and it\u2019s so beneficial to both your mental and emotional wellbeing. I...",
+    "risk_assessment": "Low risk, already invested in multiple sports",
+    "opportunity": "Co-marketing with other women's sports"
+  },
+  "Observer": {
+    "segment_description": "Casual fans who consume content but rarely engage publicly.",
+    "why_became_fans": {
+      "Game entertainment": 40,
+      "Player skill & athleticism": 32,
+      "Social cause alignment": 18,
+      "Other": 10
+    },
+    "what_they_care_about_now": {
+      "Match highlights": 38,
+      "Player interviews": 25,
+      "Team news": 20,
+      "Social media content": 12,
+      "Other": 5
+    },
+    "sample_quote": "So jacked up\u2019",
+    "risk_assessment": "Easy to lose to competing entertainment",
+    "opportunity": "Create highlights & short-form content"
+  },
+  "Supporter": {
+    "segment_description": "Positive, engaged fans who show up consistently.",
+    "why_became_fans": {
+      "Team success": 35,
+      "Player development": 30,
+      "Community": 25,
+      "Other": 10
+    },
+    "what_they_care_about_now": {
+      "Match day participation": 35,
+      "Team growth & roster": 30,
+      "Player development": 20,
+      "Community events": 15
+    },
+    "sample_quote": "Iowa has a women\u2019s sports bar too \u2026 Heroics sports lounge \u2026 @heroicssportslounge",
+    "risk_assessment": "Low risk, stable fanbase",
+    "opportunity": "Convert to higher-engagement tiers"
+  },
+  "Vocal Supporter": {
+    "segment_description": "Active, engaged fans who vocalize opinions. Drivers of community discussions.",
+    "why_became_fans": {
+      "Team success & winning": 35,
+      "Community & belonging": 28,
+      "Player performance": 22,
+      "Other": 15
+    },
+    "what_they_care_about_now": {
+      "Match results & analysis": 40,
+      "Team roster decisions": 25,
+      "Community engagement": 20,
+      "Opponent matchups": 10,
+      "Other": 5
+    },
+    "sample_quote": "Yassss! Let's go @setthebaromaha \ud83d\udc96\ud83d\udd25\ud83d\udc95",
+    "risk_assessment": "May become detractors if team underperforms",
+    "opportunity": "Channel into community organizing & events"
+  }
+}

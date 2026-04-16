@@ -141,9 +141,11 @@ The signal centers almost entirely on *individual players*, primarily Caroline S
 
 The data documents simultaneous Loyalty Stress and Trust Split signals—the most dangerous combination:
 
-**From the raw data:**
-- Supporter group disbanded in protest after Crux Football's acquisition stake
-- This is explicitly documented as a voluntary disengagement event
+**Loyalty Stress: Present**  
+The organized supporter group disbanded in protest after Crux Football's acquisition, representing explicit loss of a core community institution.
+
+**Trust Split: Weak**  
+Fans express doubt about institutional motives around ownership and decision-making transparency, but the rejection is conditional on governance, not absolute.
 
 **Fan sentiment on the ownership change:**
 
